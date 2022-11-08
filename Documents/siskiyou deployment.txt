@@ -1,0 +1,70 @@
+Siskiyou (Magento) - Production deployment initiated.
+
+ssh -p 20685 shanmukhap@ssh.47jqy53a1lkbpinx.mojostratus.io
+DB Backup:
+--------------------------------------------------------------------------------------------
+
+php bin/magento maintenance:status
+php bin/magento maintenance:enable
+
+php bin/magento c:c
+php bin/magento c:f
+
+mysqldump -h mysql -u user_47jqy53a1lk -p db_47jqy53a1lk --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /srv/public_html/var/backups/db_47jqy53a1lk_25_2022_feb.sql.gz
+
+        'host' => 'mysql',
+        'dbname' => 'db_47jqy53a1lk',
+        'username' => 'user_47jqy53a1lk',
+        'password' => '827469b7-704e-4b72-a13c-dd96cee491a2',
+
+Password:
+827469b7-704e-4b72-a13c-dd96cee491a2
+--------------------------------------------------------------------------------------------
+Code Deployment:
+
+git status
+
+git branch
+
+git remote -v
+
+git pull origin develop 
+
+git status
+
+php bin/magento setup:upgrade
+
+php bin/magento setup:di:compile
+
+php bin/magento setup:static-content:deploy -f
+
+php bin/magento maintenance:disable
+
+php bin/magento  c:c
+
+php bin/magento  c:f
+php bin/magento indexer:reindex
+/usr/share/stratus/cli zerodowntime.init
+/usr/share/stratus/cli zerodowntime.switch
+/usr/share/stratus/cli cache.all.clear
+
+Flush cache in magemojo control pannel:
+https://magemojo.com/mhm-ng/#/stratus/47jqy53a1lkbpinx/cfinfo
+MEMCACHE CLEAR
+
+Siskiyou (Magento) - Production deployment completed.
+****************--------------------------------------------------------------------------------------------******************
+
+
+UPGRADE
+
+ssh -p 29484 shanmukhap@ssh.3vnrv4bribbiv140.mojostratus.io ----------------------------> upgrade 2.4.2 Siskiyou
+
+ 'host' => 'mysql',
+                'dbname' => 'db_3vnrv4bribb',
+                'username' => 'user_3vnrv4bribb',
+                'password' => '43fe1aa5-3aad-443a-8794-39dfcae2266c',
+
+mysqldump -h mysql -u user_3vnrv4bribb -p db_3vnrv4bribb --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /srv/public_html/var/backups/db_3vnrv4bribb_21_2022_feb.sql.gz
+
+43fe1aa5-3aad-443a-8794-39dfcae2266c

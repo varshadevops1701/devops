@@ -1,0 +1,11 @@
+mcprod.kurrent.com	151.101.1.124
+mcprod.kurrent.com	151.101.65.124
+mcprod.kurrent.com	151.101.129.124
+mcprod.kurrent.com	151.101.193.124
+
+
+
+_acme-challenge.mcprod.kurrent.com CNAME vaoxnp4fx4uvla5uiw6eq667kduzwtfoxwa2w37kkotncg5fuchq.validation.magento.cloud
+_acme-challenge.www.mcprod.kurrent.com CNAME efz3griczomz5cm6e4grhr3wt2cly2kariprivrqaenr5fxyzrza.validation.magento.cloud
+_acme-challenge.mcstaging.kurrent.com CNAME bzp2ktgebmqrlzjiwyv3j7em6hxzyszkzmfsmotbaefp526gyjla.validation.magento.cloud
+_acme-challenge.www.mcstaging.kurrent.com CNAME nsoxrmka65ksnippomd3n75wm4m6w3hbq4ejodxvj7crsw4sdj4q.validation.magento.cloud

@@ -1,0 +1,8 @@
+https://github.com/docker-library/rabbitmq/blob/844403953ac5d3d1a2e6029e85b779df9a105d58/3.9/alpine/management/Dockerfile
+
+
+
+https://github.com/jetrails/docker-magento-alpine/blob/master/src/php-fpm-7.1/Dockerfile
+
+
+https://hub.docker.com/r/jetrails/magento-alpine

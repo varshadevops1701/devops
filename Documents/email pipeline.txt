@@ -1,0 +1,54 @@
+pipeline {
+    agent any
+     environment {
+            EMAIL_INFORM = 'varshap@kensium.com','shanmukhap@kensium.com',
+        }
+
+    stages {
+        stage('MontlyReport') {
+            steps {
+                echo 'MonthlyReport'
+            }
+        }
+		}
+     post {
+        always {
+            emailext body: '''Hello Team,\n\rYou have to submit your monthly report.  \n\rPlease send. \n\rBest regards,\n\rShanmukha P.''',
+                        to: "${EMAIL_INFORM}",
+                        replyTo: 'varshap@kensium.com','shanmukhap@kensium.com',
+                        subject: 'Gentle Reminder: Monthly Report Submission'
+                        
+            } 
+        }
+
+}
+
+
+
+0 23 28-31 * * 
+
+
+pipeline {
+    agent any
+     environment {
+            EMAIL_INFORM = 'varshap@kensium.com'
+        }
+
+    stages {
+        stage('Monthly_report_Notify') {
+            steps {
+                echo 'Monthly_report_Notify'
+            }
+        }
+		}
+     post {
+        always {
+            emailext body: '''Hello Team,\n\rMonthly_report_Notify.  \n\rPlease send. \n\rBest regards,\n\rShanmukha P.''',
+                        to: "${EMAIL_INFORM}",
+                        replyTo: 'shanmukhap@kensium.com',
+                        subject: 'Gentle Reminder: Monthly_report_Notify'
+                        
+            } 
+        }
+
+}

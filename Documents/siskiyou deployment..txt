@@ -1,0 +1,83 @@
+Hi,
+
+As our developer's team said Issue is occurring for the last two days before that it is working fine and the file exists in the below path /srv/public_html/apiclient/acumatica_envelops.csv. Please check if it is related to permission issue
+
+Thanks,
+
+Varsha P.
+
+
+magemojo ticket for permission issue .Kindly do the needful.
+
+nexcess 
+
+
+Rsync –avzh public_html public_html_feb21_2022 
+
+
+
+
+ssh abc64d8c_3@1ab4944c89.nxcli.net
+
+
+ssh abc64d8c_4@1ab4944c89.nxcli.net
+==================================================
+=======================================================
+production deployement
+
+ssh -p 20685 pavanj@ssh.47jqy53a1lkbpinx.mojostratus.io
+
+cd public_html
+
+php bin/magento maintenance:status
+
+php bin/magento maintenance:enable
+
+php bin/magento maintenance:status
+
+php bin/magento  c:c
+
+php bin/magento  c:f
+
+cd backup
+
+mysqldump -h mysql --user=user_47jqy53a1lk --password --no-tablespaces --single-transaction --skip-triggers db_47jqy53a1lk | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > db_47jqy53a1lk_April_07_2022.sql.gz
+
+
+cd public_html
+
+git status
+
+git remote
+
+git log -n 3
+git branch
+
+git pull origin develop
+
+php bin/magento setup:upgrade
+
+php bin/magento setup:di:compile
+
+php bin/magento setup:static-content:deploy -f
+
+php bin/magento  c:c
+
+php bin/magento  c:f
+php bin/magento indexer:reindex
+/usr/share/stratus/cli zerodowntime.init
+/usr/share/stratus/cli zerodowntime.switch
+/usr/share/stratus/cli cache.all.clear
+
+php bin/magento maintenance:disable
+
+php bin/magento  c:c
+
+php bin/magento  c:f
+
+
+
+
+
+
+

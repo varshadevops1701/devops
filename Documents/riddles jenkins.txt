@@ -1,0 +1,45 @@
+PWA-riddlesjewelry.com == staging 
+
+Freestyle-pwa.riddles-staging
+deployment-pwa.riddles-staging
+branch === staging
+
+
+riddlesjewey.com (PWA)  Production
+
+Freestyle-riddlesjewelry-production
+deployment-riddlesjewelry-Production
+
+branch== master
+
+pwastaging.riddlesjewelry.com (magento)(staging)
+
+freestyle-pwastaging-riddles-staging
+gitpull-pwastaging.riddles-staging
+deployment-pwastaging.riddles-staging
+
+branch= staging_pwa
+
+
+backend.riddlesjewelry.com  = production
+
+
+freestyle-backend.riddles-production
+gitpull-backend.riddles-production
+deployment-backend.riddles-production
+branch= master_pwa
+
+
+
+ssh abc64d8c_3@1ab4944c89.nxcli.net -> backend.riddles, riddles, pwa.riddles
+DentalAgingsVendLimper
+
+
+
+ssh ac856ab1_3@28e8399bc4.nxcli.net     -> staging.riddles
+CoziesWackyInventChina
+
+
+
+ssh a99fc871_3@f6d5be4d6f.nxcli.net       -> pwastaging.riddles
+BozosSkewerCellDraw

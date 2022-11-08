@@ -1,0 +1,65 @@
+ 'host' => '127.0.0.1',
+        'username' => 'xol6tvzo6u2v4',
+        'dbname' => 'xol6tvzo6u2v4',
+        'password' => 's',
+
+ 'host' => '127.0.0.1',
+        'username' => 'xol6tvzo6u2v4',
+        'dbname' => 'xol6tvzo6u2v4',
+        'password' => 'aJdUtqDT5THPOHM',
+		
+		'host' => '127.0.0.1',
+        'username' => 'xol6tvzo6u2v4',
+        'dbname' => 'xol6tvzo6u2v4',
+        'password' => 'aJdUtqDT5THPOHM',
+
+		aJdUtqDT5THPOHM
+mysqldump -h 127.0.0.1 -u xol6tvzo6u2v4 -p xol6tvzo6u2v4 --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/xol6tvzo6u2v4/var/backups/iqc_prod_$(date +%d-%b-%Y).sql.gz
+mysqldump -h 127.0.0.1 -u xol6tvzo6u2v4 -p xol6tvzo6u2v4 --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/xol6tvzo6u2v4/var/backups/iqc_prod_$(date +%d-%b-%Y).sql.gz
+mysqldump -h 127.0.0.1 --user=xol6tvzo6u2v4 --password  --single-transaction --skip-triggers --skip-lock-tables xol6tvzo6u2v4 | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/xol6tvzo6u2v4/var/backups/iqc_prod_12May2022.sql.gz 
+nqKodGmd53Vl
+
+staging:
+Doken$1um2022
+array (
+        'host' => '127.0.0.1',
+        'username' => 'xol6tvzo6u2v4_stg',
+        'dbname' => 'xol6tvzo6u2v4_stg',
+        'password' => 'uZrh0lH6wKxtTDe',
+		
+		ssh 3.ent-xol6tvzo6u2v4-production-vohbr3y@ssh.us-3.magento.cloud
+		rsync -avzhr 3.ent-xol6tvzo6u2v4-production-vohbr3y@ssh.us-3.magento.cloud:/app/xol6tvzo6u2v4/pub/media .
+
+
+rsync -avzhr 3.ent-xol6tvzo6u2v4-production-vohbr3y@ssh.us-3.magento.cloud:/app/xol6tvzo6u2v4/pub/media/catalog .
+
+rsync -avzhr 3.ent-xol6tvzo6u2v4-production-vohbr3y@ssh.us-3.magento.cloud:/app/xol6tvzo6u2v4/pub/media/wysiwyg .
+mysqldump -h 127.0.0.1 -u xol6tvzo6u2v4_stg -p xol6tvzo6u2v4_stg --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/xol6tvzo6u2v4_stg/var/backups/iqc_stg_$(date +%d-%b-%Y).sql.gz
+mysql -h 127.0.0.1 -u xol6tvzo6u2v4_stg -p xol6tvzo6u2v4_stg -A
+
+performance
+username' => 'user',
+        'host' => 'database.internal',
+        'dbname' => 'main',
+mysqldump -h database.internal -u user -p main --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /tmp/iqc_performance_$(date +%d-%b-%Y).sql.gz
+ scp iqc_stg_21-Jul-2022.sql.gz ssh xol6tvzo6u2v4-performance-jimjq4i--mymagento@ssh.us-3.magento.cloud:/tmp/
+
+ mysql -h database.internal -u user -p main -A
+ 
+ mysqldump -h  database.internal -u user -p main core_config_data > coreconfigdata_stg_July212022.sql
+ 
+ zcat iqc_stg_21-Jul-2022.sql.gz -f | sed -re 's/DEFINER=`[^`]+`@`[^`]+`//' | mysql -h database.internal --user user -p main -A
+ 
+3UqmLZqwDypM2zv9cXBH  --> Password to pull the code
+
+Deployment has been completed. Santosh D Please initiate smoke test.
+Doken$1um2022
+
+
+
+magento-cloud environment:redeploy
+
+"http://{all}":
+    type: upstream
+    upstream: "mymagento:php"
+

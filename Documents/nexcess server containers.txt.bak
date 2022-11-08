@@ -1,0 +1,14 @@
+EraGem:
+Elasticsearch 7.6-latest  == cg-5808-elasticsearch.us-midwest-1.nxcli.net == 8265
+
+
+robertscamera:
+Elasticsearch 7.10-latest  == cg-11423-elasticsearch.us-midwest-1.nxcli.net == 39936
+
+Varnish Caching
+Version	== 4-latest
+Backend Host ==cg-11446-varnish.us-midwest-1.nxcli.net
+Main Port== 37402
+Admin Port==48842
+Agent Port==63476
+

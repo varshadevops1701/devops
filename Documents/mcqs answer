@@ -1,0 +1,26 @@
+1. rmdir (b)
+2. python (b)
+3. du -sh *(a)
+4. scp (b)
+5. wc -w filename (a)
+6. x (b)
+7. DNS (b)
+8. GNU stands for GNU’s not Unix.
+9. /etc/
+10. ~
+11. docker kill
+12. sudo docker -i -t alpine /bin/bash
+13. True 
+14. True
+15. True
+16.volumes
+17.All of the above
+18.Both a and B correct
+19.a.jenkins_URL/restart
+20.b.ad hoc
+21.c.Python
+22.c. .j2
+23.c. Go
+24 b. terraform apply
+25.b.Pod
+

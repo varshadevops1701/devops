@@ -1,0 +1,182 @@
+1.Which command is used to remove an empty directory
+a. remove
+b. rmdir
+c. rdir
+d. rm
+
+Answer:
+
+2.Which of the following is the popular scripting langaguge of DevOps?
+a.Java
+b.python
+c.Html
+d.C++
+
+Answer:
+
+3.WHich of the following is use to find the disk usage for the present directory?
+a. du -sh *
+b. df -sh *
+c. du -hT *
+d. df -hT *
+Answer:
+
+4.How to copy a file from one linux server to another linux server
+a. cp 
+b. scp 
+c. mv
+d. all the above
+Answer:
+
+5.Which of the following command is used to count the total number of  words contained in a file?
+a.wc -w filename 
+b.wcount -w filename 
+c.countw -w filename 
+d.None of the above
+Answer:
+
+6.Among the following command which is used with vi editors to delete a single character?
+a.a
+b.x
+c.y
+d.d
+Answer:
+
+7.Identify the service which is used to translate a domain name to IP address.
+a.NIS
+b.DNS
+c.SMB
+d.NFS
+
+Answer: 
+
+8.GNU stands for ___________.
+
+a.Greek Needed Unix
+
+b.General Unix
+
+c.GNU’s Not Unix
+
+d.General Noble Unix
+Answer: 
+
+9.In which of the following directory does the configuration files are present?
+a./bin/
+
+b./root/
+
+c./etc/
+
+d. /dev/
+Answer:
+
+10.Which of the following sign is used to represent the user home directory?
+a. /
+
+b. .
+
+c. ~
+
+d. ..
+Answer:
+
+11.which command is used for stopping a running container?
+a. docker kill
+b. docker logout
+c. docker remove
+d. docker rm 
+ Answer: 
+
+12.Which command is used for running the images as a container?
+a.docker ps
+b.docker run containername
+c.docker -i -t alpine /bin/bash
+d.All the above
+
+
+
+13. Can we create multiple containers from the same image on docker?
+a.True
+b. False
+Answer:
+
+14.Can we use "FROM" instruction multiple time in a dockerfile?
+a.True
+b. False
+
+15.Can we use json insted of YAML in docker-compose file?
+a.True
+b.False
+
+16.How to save the service data from docker to local?
+a. volumes
+b. mount
+c. A & B
+d.None of the above
+
+17. How to move or copy Jenkins from one server to another?
+
+A. Drive a work from one installation of Jenkins to another by copying the relevant work directorywrong
+B. By making the clone of a job directory by another name Create a copy of a previously existing job
+C. Renaming an existing job by renaming a directory
+D. All of the above
+
+18.  What are the two components in Jenkins is mainly integrated with??
+A. Version Control system like GIT, SVNwrong
+B. And build tools like Apache Maven
+C. Both A and B correct
+D. None
+
+19. What is the command to force start the jenkins manually from UI?
+a.jenkins_URL/restart
+b.jenkins_URL/safeRestart
+c.jenkins_URL/start
+d.jenkins_URL/safestart
+Answer:
+
+
+20.which command is a single command to run manually in Ansible task that you want to perform quickly?
+a.ansible
+b.ad hoc
+c.ansible.cfg
+d.ansible-doc
+
+Answer:
+
+21.In Ansible, which programming language is used?
+a.Java
+b.Ruby
+c.Python
+d.C#
+answer:
+
+22.In ansible, what is the extension used for template files?
+a. .in
+b. .yml
+c. .j2
+d. none of the above
+Answer:
+
+23.Terraform is written in
+a. Java
+b. Python
+c. Go
+d. c++
+Answer:
+
+
+
+24.Which command is use to create a infrastructure?
+a. terraform plan
+b. terraform apply
+c. terraform init
+d. terraform create
+Answer:
+
+25.What is the basic operational unit of Kubernetes?
+a.Task
+b.Pod
+c.Nodes
+d.Container
+

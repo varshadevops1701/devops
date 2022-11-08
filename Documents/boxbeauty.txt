@@ -1,0 +1,27 @@
+PHP 7.4.28 (cli) ( ZTS )
+Copyright (c) The PHP Group
+Zend Engine v3.4.0, Copyright (c) Zend Technologies
+    with the ionCube PHP Loader + ionCube24 v10.4.5, Copyright (c) 2002-2020, by ionCube Ltd.
+    with Zend OPcache v7.4.28, Copyright (c), by Zend Technologies
+	
+	
+Composer version 1.10.5 2020-04-10 11:44:22
+
+
+mysql -V
+mysql  Ver 15.1 Distrib 10.4.24-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2
+
+mysqldump -h 127.0.0.1 --user=wt22n5pee3wns_stg --password  --single-transaction --skip-triggers wt22n5pee3wns_stg | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/wt22n5pee3wns_stg/var/backup/$(date +%d-%b-%Y)-bb_stg.sql.gz
+
+'host' => '127.0.0.1',
+        'username' => 'wt22n5pee3wns_stg',
+        'dbname' => 'wt22n5pee3wns_stg',
+        'password' => 'ZYSgP6i5mi2yrtg',
+      ),
+
+
+NexTec-amconnector-v3-acumatica
+
+TamedYeastyTypifyYahoos35
+
+lisa@smartwebdev.com

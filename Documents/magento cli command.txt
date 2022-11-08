@@ -1,0 +1,19 @@
+magento-cloud variable:get -e Staging2
+magento-cloud variable:get -e <environment ID>
+
+
+
+magento-cloud environments -p [id]
+magento-cloud environments -p projectid
+
+
+magento-cloud 
+
+magento-cloud 
+
+magento-cloud list
+
+magento-cloud  environment:redeploy
+
+
+7UpL9IeXGz4-zM3kBkPzDHcISLnht6RQ

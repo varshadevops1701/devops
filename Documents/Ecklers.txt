@@ -1,0 +1,21 @@
+./ecr-deploy-cli.sh tag sha256:a916b98f8d030748ddf9ea2db52b7659e2030e640f9c06e6356e31cebfd69e93 integration 
+
+
+./ecr-deploy-cli.sh list
+
+./integrationdeploy.sh or ./bwwdeploy.sh
+
+
+static_content_deploy.sh integration 
+
+start-crons-containers.sh integration
+
+shell.sh integration
+
+setup_upgrade.sh integration
+
+cache_flush.sh integration
+
+bin_magento.sh integration index:status
+
+ 

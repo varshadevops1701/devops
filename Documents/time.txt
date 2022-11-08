@@ -1,0 +1,85 @@
+https://app2.clarizen.com/Clarizen/TeamSpace/Timesheet?orgId=35701569
+
+https://app2.clarizen.com/Clarizen/ObjectDetails/Index/8.14896222145.35701569/?orgId=35701569
+
+
+2/2/2022
+1. As requested we have removed the access of users from our end.
+2. Did BoxBeauty maintenance.
+3. Worked on Pharmacann DB backup and involved in individual table backups for pre-prod and staging and truncate table in pre-prod and import staging tables into pre-prod.
+4. Involved in north40 Magento production deployment.
+5. Prepared a document on nexcess active sites and inactive sites and also took backup for inactive sites.
+6.Involved in Pharmmacann access as per request.
+7. As per mail for pantheon  ks-demo move the test changes to live .
+
+3/2/2022
+1. AMI production deployment.
+
+
+[10:58] Sudheer M
+B1t6U(k3tKen$1um
+
+[11:06] Shanmukha P
+Magemojo: bsZ1B@UG*d4f 
+
+B1t6U(k3tKen$1um
+
+
+git push kensium/origin --all
+
+devops@kensium.com
+9t!!k$5r&p^jXU-k
+
+We have pushed the test changes to the live site. Please check and confirm. 
+[18/01 17:21] Prabhu G
+vpken$1um22
+
+[18/01 17:24] Varsha P
+Ya it is connecting
+
+Ef4IeqUaezAhzoo = acumatoca
+
+
+
+allevron86@gmail.com
+shenronZen3722
+
+
+3UqmLZqwDypM2zv9cXBH  --> Password to pull the code
+https://bitbucket.org/kensium-solutions/msl-amconnector-v3-magento.git
+
+Completed the maintenance activity.
+
+cN5PwMGnxdBPZ8qGNZG2  == apppassword
+shenronZen3722
+
+
+shenronZen3722
+
+We have not provided any access to the below users from our end.
+
+
+vpken$1um
+
+Kensium@123
+
+
+ https://packagist.com/hooks/generic/3046960/1465ac13ba7f8be0aa2142ee2b6715803469969b
+ 
+ https://packagist.com/hooks/generic/3046960/1465ac13ba7f8be0aa2142ee2b6715803469969b
+ 
+ https://packagist.com/hooks/generic/3047140/bb024d378155ce7202d2ec0c3a888b42d12e88c4
+ 
+ 
+ 
+Product-Kensium_BetterB2BCustomization
+ 
+ 
+ 
+ 
+Product-Kensium_B2B-Big_Commerce
+
+
+Mysql 8.0
+php 7.3
+es 7.9

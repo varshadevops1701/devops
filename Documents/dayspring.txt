@@ -1,0 +1,12 @@
+mysqldump -h 127.0.0.1 --user=bxtohhbqs3xu4 --password  --single-transaction --skip-triggers --skip-lock-tables bxtohhbqs3xu4 | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/bxtohhbqs3xu4/var/backups/dayspring_prod_$(date +%d-%b-%Y).sql.gz
+
+
+$(date +%d-%b-%Y).sql.gz
+
+ 'host' => '127.0.0.1', 
+
+        'username' => 'bxtohhbqs3xu4', 
+
+        'dbname' => 'bxtohhbqs3xu4', 
+
+        'password' => 'vu10q0B5AkPoI28', 

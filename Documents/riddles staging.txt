@@ -1,0 +1,23 @@
+'host' => 'localhost',
+                'dbname' => 'abc64d8c_riddlesstg',
+                'username' => 'abc64d8c_riddlesstg',
+                'password' => 'TeamsWhisksMildewJetsam89',
+
+
+mysqldump -h localhost -u abc64d8c_riddlesstg -p abc64d8c_riddlesstg --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /chroot/home/ac856ab1/dbbackups_riddles_stg_$(date +%d-%b-%Y).sql.gz
+TeamsWhisksMildewJetsam89
+
+
+
+mysqldump -h localhost --user=abc64d8c_riddlesstg --password --single-transaction --skip-triggers danforth_stg_local
+
+ core_config_data | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > danforth_stg_local_core_config_data.sql.gz
+
+
+mysqldump -h localhost -u abc64d8c_riddlesstg -p abc64d8c_riddlesstg --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /chroot/home/ac856ab1/dbbackups_riddles_stg__2022_June_6.sql.gz
+
+
+mysql -h localhost -u abc64d8c_riddlesstg -p abc64d8c_riddlesstg -A
+
+
+3UqmLZqwDypM2zv9cXBH  --> Password to pull the code

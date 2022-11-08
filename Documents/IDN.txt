@@ -1,0 +1,13 @@
+ 'host' => '127.0.0.1', 
+
+        'username' => 'vtbhmz7nbiqaa', 
+
+        'dbname' => 'vtbhmz7nbiqaa', 
+
+        'password' => 'cxs5ynhoUOolf3f', 
+
+         
+
+ IDN Global - Magento Production Deployment initiated.
+
+mysqldump -h 127.0.0.1 --user=vtbhmz7nbiqaa --password  --single-transaction --skip-triggers --skip-lock-tables vtbhmz7nbiqaa | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/vtbhmz7nbiqaa/var/backups/idn_prod_07June2022.sql.gz 

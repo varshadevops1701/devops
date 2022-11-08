@@ -1,0 +1,22 @@
+https://kensium.atlassian.net/browse/KSD-3097    ====  mrudurmai access for sanbox  == completed  == waiting for clarizen access  1
+
+https://kensium.atlassian.net/browse/KSD-3084  == GPP access  == done and time also done == 0.5
+
+
+https://kensium.atlassian.net/browse/KSD-3098   === ocean and brine new site == time also done 1 
+
+https://kensium.atlassian.net/browse/KSD-3080  == sir is handling
+
+https://kensium.atlassian.net/browse/KSD-3095   == tomorrow allparts deployment -- not yet
+
+https://kensium.atlassian.net/browse/KSCS-274    == for klingspor  === not yet
+
+https://kensium.atlassian.net/browse/KSD-3092   == SLC db dump == completed  0.5  
+
+https://kensium.atlassian.net/browse/KSD-3099 === nexcess portal access  == completed for north40 ask them to PM or client   0.5
+
+
+https://kensium.atlassian.net/browse/CHAS-24  === chaparral deployment  === completed aiting for ticket  == 1
+
+
+Dekralite did   === completed   == 0.75 

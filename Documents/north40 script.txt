@@ -1,0 +1,164 @@
+#!/bin/bash
+
+# Configurable paths
+scan_path="/chroot/home/northfou/prod.north40.com/html/"	#the path from where the scan should start
+prog_path="/home/northfou/public_html/malscanner/"
+m_file_list+=$prog_path"master_list_of_files.txt"	# Filename and path of the master file list, which should have files that are processed for checksum.
+m_chksum_file+=$prog_path"master_chksum_file.txt"
+m_chksum_err+=$prog_path"master_chksum_errors.txt"
+d_file_list+=$prog_path"daily_list_of_files.txt"	# Filename and path of the daily file list, which should have files that are processed for checksum.
+d_chksum_file+=$prog_path"daily_chksum_file.txt"
+scan_file_list+=$prog_path"scan_list.txt"
+commandstr=""
+lessthansize="100k"
+exclusionpath=""
+arr_excl_path=('vendor' 'generated' 'var/report' 'var/log/cc_scanner' 'var/view_preprocessed' 'var/vendor' 'pub/static' 'var/page_cache' 'pub/media/cache' 'app' 'bin')
+exculdefiletype=""
+arr_excl_ftype=('*.sql' '*.png' '*.jpeg' '*.jpg' '*.gif' '*.css' '*.zip' '*.less' '*.gz')
+arr_excl_files=('scan_list.txt' 'master_list_of_files.txt' 'master_chksum_file.txt' 'master_chksum_errors.txt' 'daily_list_of_files.txt' 'daily_chksum_file.txt')
+exclude_files=""
+
+
+#build the exclusion path from the array
+for str1 in ${arr_excl_path[@]}; do
+	exclusionpath+=" -not -path '"$scan_path$str1"/*'"
+done
+#echo $exclusionpath
+
+#build the excluded file types from the array
+for str1 in ${arr_excl_ftype[@]}; do
+	exculdefiletype+=" -not -name '"$str1"'"
+done
+#echo $exculdefiletype
+
+#build the excluded files from the array
+for str1 in ${arr_excl_files[@]}; do
+	exclude_files+=" -not -wholename '"$prog_path$str1"'"
+done
+#echo $exclude_files
+
+#Command line Arguments
+#m = master mode
+#d = daily mode
+
+if [ "$1" == "m" ]; then
+	echo "master mode" $(date)
+
+	#Check if masterfile exists. If it does not exist inform and exit.
+	if test -f "$m_file_list"; then
+	    rm "$m_file_list"
+		echo "Removed Master File List" $(date)
+	fi
+	: > $m_file_list #create an empty file
+	#check if master_chksum_file.txt exists. if it exists, it should be deleted.
+	if test -f "$m_chksum_file"; then
+		# we need to delete both master file and its checksum file.
+	    rm "$m_chksum_file"
+		echo "Removed Master CheckSum File" $(date)
+	fi
+
+	echo "Generating Master File List" $(date)
+	#build command
+	#find $scan_path -type f -size -100k -not -name 'getchecksums.sh' -not -name 'master_list_of_files.txt' | perl -lne 'print if -T' > "$m_file_list"
+	#find $scan_path -type f -size -100k -not -path "/media/srinivask/d2/downloads/html/pub/media/cache/*" $exclude_files | perl -lne 'print if -T' > "$m_file_list"
+	commandstr="find '"
+	commandstr+=$scan_path
+	commandstr+="' "
+	commandstr+="-type f -size -"$lessthansize" "
+	commandstr+=$exclusionpath" "
+	commandstr+=$exculdefiletype" "
+	commandstr+=$exclude_files" "
+	commandstr+=" | perl -lne 'print if -T'"	#only text files
+	commandstr+=" > ""'$m_file_list'"	#redirect output to a file
+	#echo $commandstr
+	echo $commandstr
+	eval $commandstr 
+
+	# Read the file list and generate the checksum for each of these file.
+	# the checksums are stored in the file master_chksum_file.txt
+	if test -f "$m_file_list"; then
+		echo "Generating Master CheckSum File"  $(date)
+		while IFS= read -r file
+		do
+			[ -f "$file" ] && sha256sum "$file" >> "$m_chksum_file"
+		done < $m_file_list
+		echo "Generated Master CheckSum File"  $(date)
+	fi
+elif [ "$1" == "d" ]; then
+	#Check if masterfile exists. If it does not exist inform and exit.
+	if ! test -f "$m_chksum_file"; then
+	    echo "Missing Master File List. Run the program to generate master list" $(date)
+	else
+		echo "daily mode" $(date)
+		if test -f "$d_file_list"; then
+			echo "Removed Daily File List." $(date)
+		    rm "$d_file_list"
+		fi
+		
+		# This is a 2 step process.
+		# Step 1: Check the checksum for all the files in Masterfilelist. the checksum should match; => no changes
+		# If they do not match, then the file has been changed and needs a scan.
+		# Step 2: Generate daily file list. Compare that with master file list. if the file matches, then no issues, if
+		# it does not match - new file created and needs to be scanned.
+
+		# Remove Master ChkSum Errors file
+		echo "Checking for Master Checksum Errors File." $(date)
+		if test -f "$m_chksum_err"; then
+			echo "Removed Daster Checksum Errors File." $(date)
+		    rm "$m_chksum_err"
+		fi
+
+		echo "Start Comparing Checksums." $(date)
+		sha256sum -c $m_chksum_file > $m_chksum_err
+		echo "End Comparing Checksums." $(date)
+
+		# Now check the CheckSum Errors file for "Error" entry.
+		# add the error ones into Master Scan list
+		echo "create new scan list" $(date)
+		if test -f "$scan_file_list"; then
+			echo "Deleted Scan list."
+		    rm "$scan_file_list"
+		fi
+		grep "FAILED" $m_chksum_err >> $scan_file_list
+		echo "New scan list Created" $(date)
+
+		#Get a list of files that have been created since the masterfile was generated
+		echo "Generating Daily File List" $(date)
+		#find $scan_path -type f -size -100k -not -name 'getchecksums.sh' -not -name 'daily_list_of_files.txt' | perl -lne 'print if -T' > "$d_file_list"		
+		#find $scan_path -type f -size -100k -not -path "/media/srinivask/d2/downloads/html/pub/media/cache/*" $exclude_files | perl -lne 'print if -T' > "$d_file_list"		
+		commandstr="find '"
+		commandstr+=$scan_path
+		commandstr+="' "
+		commandstr+="-type f -size -"$lessthansize" "
+		commandstr+=$exclusionpath" "
+		commandstr+=$exculdefiletype" "
+		commandstr+=$exclude_files" "
+		commandstr+=" | perl -lne 'print if -T'"	#only text files
+		commandstr+=" > ""'$d_file_list'"	#redirect output to a file
+		#echo $commandstr
+		echo $commandstr
+		eval $commandstr 
+
+		# grep for each file in daily file list from the master file list.
+		# if the entry is found, skip and process next entry. If file is not found, it means a new one was created
+		# and then needs to be scanned.
+
+		echo "Start update scan list new files" $(date)
+		while read -r file
+		do
+		  FOUND="$(grep "$file" $m_file_list)"
+		  if [ "x$FOUND" != "x" ]
+		  then
+		    echo "FOUND: $file"
+		  else
+		    echo "NOT FOUND: $file"
+		    # Add these files into Master Scan list.
+		    echo $file": NEWFILE">> $scan_file_list
+		  fi
+		done <$d_file_list
+		echo "End update scan list new files" $(date)
+	fi
+php /chroot/home/northfou/prod.north40.com/html/malscanner/cc_scanner.php dir="/chroot/home/northfou/prod.north40.com/html"
+else
+	echo "incorrect argument"
+fi

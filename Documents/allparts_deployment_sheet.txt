@@ -1,0 +1,78 @@
+
+
+ssh a50aea66_4@0026a26cec.nxcli.net
+HydraeSerestMoiresFulfil
+
+
+AllParts - Magento Production Deployment initiated.
+
+php bin/magento maintenance:enable
+
+php bin/magento c:c
+php bin/magento c:f
+
+crontab -l > /home/a50aea66/dbbackups/cron_$(date +%d-%b-%Y).bkp
+crontab -r
+
+mysqldump -u a50aea66_sj7sja0 -h 127.0.0.1 -p a50aea66_sj7sja0 --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /home/a50aea66/dbbackups/Allpartsdbbackup_$(date +%d-%b-%Y).sql.gz
+
+db' => [
+'table_prefix' => '',
+
+        'connection' => [
+
+            'default' => [
+
+                'host' => '127.0.0.1',
+
+                'dbname' => 'a50aea66_sj7sja0',
+
+                'username' => 'a50aea66_sj7sja0',
+
+                'password' => 'HempenScarfRubleWants',
+
+
+  
+
+please check git status --> ask sainadhm/prasannak
+
+git remote -v
+git status
+git pull kensium master
+
+kensiumdevops === username
+3UqmLZqwDypM2zv9cXBH  --> Password to pull the code
+
+git log -n 3 we need to verify the  commits
+
+If we get composer.lock or composer.json after pulling the code the run composer install command
+
+composer install
+
+php bin/magento setup:upgrade
+
+If setup upgrade failed then ask nexcess team to remove long sleep mysql queries
+run setup upgrade again
+
+php bin/magento setup:di:compile
+php bin/magento setup:static-content:deploy -f
+php bin/magento indexer:reindex
+php bin/magento c:c
+php bin/magento c:f
+
+
+pkill-f 'queue:consumers:start'
+
+pkill -f queue
+
+ps aux | grep queue
+
+
+enable the crons again:
+crontab /home/a50aea66/dbbackups/cron_$(date +%d-%b-%Y).bkp
+
+crontab -l
+
+AllPartsProduction Deployment Completed. Maintenance not disabled yet.Please Initiate QA Srikanth O/Santosh D
+php bin/magento maintenance:disable
+clean the CDN cache in nexcess --> nexcess we have "others" plan to check CDN and clean the cache

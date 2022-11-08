@@ -1,0 +1,87 @@
+ssh yoogis-closet-m2-production-nfs
+
+
+ssh yoogis-closet-m2-production-nfs:/home/mariappan.p/backups
+yoogiscloset_prod_June_07_2022.sql.gz
+mysqldump -h rds.webscale.vpc --no-tablespaces --set-gtid-purged=OFF --triggers --routines -u yoogiscloset_m2 -p yoogiscloset_m2 | gzip --to-stdout > yoogiscloset_m2stg_May_27_2022.sql.gz
+
+mysqldump -h rds.webscale.vpc --no-tablespaces --set-gtid-purged=OFF --triggers --routines -u yoogiscloset_m2 -p yoogiscloset_m1_prod_replica | gzip --to-stdout > /home/mariappan.p/backups/yoogiscloset_prod_replica_Jul_27_2022.sql.gz
+
+/home/mariappan.p/backups
+yoogiscloset_m1_prod_replica
+ 'host' => 'rds.webscale.vpc',
+                'dbname' => 'yoogiscloset_m2',
+                'username' => 'yoogiscloset_m2',
+                'password' => '8PgLNxYLW6CfmHkRMC4hJqpGLzpX46',
+				
+Once we switch to the user and Actually db details present in the container once we run shell.sh then we enter into the container.
+ mysqldump -h rds.webscale.vpc -u cnzt7yizxjcda_stg -p cnzt7yizxjcda_stg core_config_data > coreconfigdata_stg_June10-2022.sql
+ 
+ /mnt/shared/backups/26-Jul-2022   ikkada tiyali
+				
+	mysql -h rds.webscale.vpc -u yoogiscloset_m2 -p yoogiscloset_m1_prod_replica -A			
+				
+scp le_connector.zip  mariappan.p@50.19.58.98:/home/mariappan.p/dbbackups
+
+yoogiscloset_m1_prod_replica on M2
+
+ select * from core_config_data where path like 'web/%/%url%';
+  mysqldump -h rds.webscale.vpc -u yoogiscloset_m2 -p yoogiscloset_m1_prod_replica core_config_data > /home/mariappan.p/backups/coreconfigdata_m1_prod_replica_July27-2022.sql
+
+mysql -h rds.webscale.vpc -u yoogiscloset_m2 -p yoogiscloset_m2 -A
+
+mysql -h rds.webscale.vpc -u yoogiscloset_m2 -p  -A
+
+mysqldump -h rds.webscale.vpc --no-tablespaces --set-gtid-purged=OFF --triggers --routines -u yoogiscloset_m2 -p yoogiscloset_m1_prod_replica | gzip --to-stdout > yoogiscloset_prod_June_07_2022.sql.gz
+
+mysqldump -h rds.webscale.vpc --no-tablespaces --set-gtid-purged=OFF --triggers --routines -u yoogiscloset -p yoogiscloset | gzip --to-stdout > yoogiscloset_prod_July_27_2022.sql.gz
+mysqldump -h rds.webscale.vpc --no-tablespaces --set-gtid-purged=OFF --triggers --routines -u yoogiscloset -p yoogiscloset | gzip --to-stdout > /home/mariappan.p/dbbackups/yoogiscloset_prod_Jun_27_2022.sql.gz
+<host><![CDATA[rds.webscale.vpc]]></host>
+          <username><![CDATA[yoogiscloset]]></username>
+          <password><![CDATA[kqQsB9N7KLmDXycauB4xoK3gaiWP6t]]></password>
+          <dbname><![CDATA[yoogiscloset]]></dbname>
+		  
+		  kqQsB9N7KLmDXycauB4xoK3gaiWP6t
+	mysql -h rds.webscale.vpc -u yoogiscloset -p yoogiscloset -A  
+		  
+		  information_schema           |
+| yoogiscloset_m1_prod_replica |
+| yoogiscloset_m2              |
+| yoogiscloset_m2_stage 
+
+
+
+mysqldump -h webscale-pharmacann-production-mysql.privatelink.mysql.database.azure.com --user=pharmacann@webscale-pharmacann-production-mysql --password  --single-transaction --skip-triggers pharmacann | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > pharmacann_preprod_April_15_2022.sql.gz
+
+
+
+
+
+
+staging
+
+'host' => 'webscale-pharmacann-staging-mysql.privatelink.mysql.database.azure.com',
+                'dbname' => 'pharmacann_stage',
+                'username' => 'pharmacann_stage@webscale-pharmacann-staging-mysql',
+                'password' => 'CjbZnEmVXGq4ZkB2pB3csBZaDz96od',
+
+mysqldump -h webscale-pharmacann-staging-mysql.privatelink.mysql.database.azure.com --user=pharmacann_stage@webscale-pharmacann-staging-mysql --password  --single-transaction --skip-triggers pharmacann_stage | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > pharmacann_staging_April_15_2022.sql.gz
+
+mysql -h webscale-pharmacann-staging-mysql.privatelink.mysql.database.azure.com -u pharmacann_stage@webscale-pharmacann-staging-mysql -p -A
+
+
+mysqldump -h webscale-pharmacann-staging-mysql.privatelink.mysql.database.azure.com -u pharmacann_stage@webscale-pharmacann-staging-mysql -p pharmacann_stage core_config_data > coreconfigdata_stg_April_15_2022.sql
+
+scp pharmacann_preprod_April_15_2022.sql.gz.sql.gz mariappan.p@104.43.128.148:/home/mariappan.p/dbbackups
+
+
+mysql -h webscale-pharmacann-production-mysql.privatelink.mysql.database.azure.com -u pharmacann@webscale-pharmacann-production-mysql -p pharmacann -A
+
+
+
+
+mysql -h webscale-pharmacann-staging-mysql.privatelink.mysql.database.azure.com -u pharmacann_stage@webscale-pharmacann-staging-mysql -p pharmacann_stage < coreconfigdata_stg_April_15_2022.sql
+
+
+
+zcat  yoogiscloset_prod_June_07_2022.sql.gz -f | sed -re 's/DEFINER=`[^`]+`@`[^`]+`//' | mysql -h rds.webscale.vpc --user yoogiscloset_m2 -p yoogiscloset_m1_prod_replica

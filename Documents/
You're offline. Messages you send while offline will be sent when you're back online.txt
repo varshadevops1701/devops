@@ -1,0 +1,2 @@
+
+You're offline. Messages you send while offline will be sent when you're back online.

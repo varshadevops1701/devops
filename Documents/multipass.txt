@@ -1,0 +1,14 @@
+multipass launch -c 2 -m 2G --disk 50G --name ansi ubuntu
+
+
+sudo snap install multipass
+
+multipass delete primary jenkins
+
+multipass purge
+
+
+sudo snap start multipass.multipassd
+
+
+multipass shell ansi

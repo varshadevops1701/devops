@@ -1,0 +1,25 @@
+EraGem:
+Elasticsearch 7.6-latest  == cg-5808-elasticsearch.us-midwest-1.nxcli.net == 8265
+
+
+robertscamera:
+
+production:
+Elasticsearch 7.10-latest  == cg-11423-elasticsearch.us-midwest-1.nxcli.net == 39936
+Varnish Caching
+Version	== 4-latest
+Backend Host ==cg-11446-varnish.us-midwest-1.nxcli.net
+Main Port== 37402
+Admin Port==48842
+Agent Port==63476
+PHP 7.4.29
+Magento CLI 2.4.2-p1
+
+
+upgrade staging(kensium.robertscamera.com)
+Elasticsearch 7.10-latest == cg-8833-elasticsearch.us-midwest-1.nxcli.net == 27437
+PHP 7.4.29
+Magento CLI 2.4.2-p1
+
+
+SLC:

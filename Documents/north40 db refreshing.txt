@@ -1,0 +1,27 @@
+
+mysqldump -h gpc002-db1-int --user=northfou_prod --password  --single-transaction --skip-triggers northfou_prod | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > $(date +%Y-%m-%d)_northfou.sql.gz == 2022-07-18
+
+
+		  'host' => 'gpc002-db1-int',
+                'dbname' => 'northfou_prod',
+                'username' => 'northfou_prod',
+                'password' => 'MuffedScopeBusedMotile85',
+				
+				
+mysql -h gpc002-db1-int -u northfou_prod -p northfou_prod -A
+
+mysqldump -h gpc002-db1-int -u northfou_prod -p northfou_prod core_config_data > coreconfigdata_stg_Sep28-2022.sql
+
+
+scp dclwhyijmqovy_2022_Sep_19.sql.gz ssh 3.ent-dclwhyijmqovy-staging2-5zxmgzy@ssh.us-3.magento.cloud:/tmp/
+
+
+mysql -h 127.0.0.1 -u dclwhyijmqovy_stg2 -p dclwhyijmqovy_stg2 < coreconfigdata_stg_Sep19-2022.sql
+
+zcat dclwhyijmqovy_2022_Sep_19.sql.gz -f  | sed -re 's/DEFINER=`[^`]+`@`[^`]+`//' | mysql -h 127.0.0.1 --user dclwhyijmqovy_stg2 -p dclwhyijmqovy_stg2 -A
+
+
+select * from core_config_data where path like "%web%";
+
+select * from core_config_data where path like 'web/%/%url%';
+			  

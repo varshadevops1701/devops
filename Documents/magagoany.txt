@@ -1,0 +1,9 @@
+rray (
+        'host' => '127.0.0.1',
+        'username' => 'kioqdepjalvum',
+        'dbname' => 'kioqdepjalvum',
+        'password' => 'uG7a4kGIzIVjX0O',
+      ),
+
+
+mysqldump -h 127.0.0.1 -u kioqdepjalvum -p kioqdepjalvum --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/kioqdepjalvum/var/backups/mahogany_prod_$(date +%d-%b-%Y).sq

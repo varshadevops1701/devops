@@ -1,0 +1,125 @@
+
+SLC Activewear - Magento Production Deployment initiated.
+
+SLC Activewear - Magento Production Deployment Completed 
+
+In P10 and slc group
+
+
+ssh a7be5191_5@7634a7b9d2.nxcli.net
+
+ssh a7be5191_5@7634a7b9d2.nxcli.net
+
+MilkerModalsDebtorRugged
+
+cd public_html
+
+
+
+enable maintenance ==== 
+
+php bin/magento maintenance:status
+
+php bin/magento maintenance:enable
+
+php bin/magento maintenance:status
+
+php bin/magento maintenance:status
+
+php bin/magento c:c
+
+php bin/magento c:f
+
+cd ..
+
+cd dbbackups
+
+host' => 'localhost',
+                'dbname' => 'a7be5191_slcactivewear2',
+                'username' => 'a7be5191_wear2',
+                'password' => 'PoetryAcrossTiesAmp31',
+
+mysqldump -h localhost --user=a7be5191_wear2 --password --single-transaction --skip-triggers a7be5191_slcactivewear2 | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > slcactivewear_prod_db_07_June_2022.sql.gz
+
+cd public_html
+
+git branch
+
+git status
+
+git remote -v
+
+git log -n 4
+
+git pull http master_upgrade_243   ===previous
+
+
+git pull bitbucket master_upgrade_243  == after migartion bitbucket remove we are using
+
+3UqmLZqwDypM2zv9cXBH  --> Password to pull the code
+after pull take a screenshot and keep it to mahesh k if they want to ask aplly patch use this command
+
+git apply m2-hotfixes/MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch   ===== after pulling we can use 
+
+
+php bin/magento setup:upgrade
+
+php bin/magento setup:di:compile
+
+php bin/magento setup:static-content:deploy -f
+
+php bin/magento c:c
+
+php bin/magento c:f
+
+ask vijaydeepak to inititae QA
+
+SLC Activewear Production Deployment Completed. Maintenance not disabled yet.Please Initiate QA .
+
+Once they confirm remove maintenance and clear cache
+
+php bin/magento maintenance:staus 
+
+php bin/magento maintenance:disable
+
+php bin/magento maintenance:status
+
+php bin/magento c:c
+
+php bin/magento c:f
+
+In nexcess portal in other we have purge cache so clear that cache also.
+
+
+
+if they ask run composer install and deployment commands
+
+cd public_html
+
+composer install
+
+php bin/magento setup:upgrade
+
+php bin/magento setup:di:compile
+
+php bin/magento setup:static-content:deploy -f
+
+php bin/magento c:c
+
+php bin/magento c:f
+
+SEO mageword SLC:
+Public Key: phj6dxv7wq031zcsubkomn5f9gyre2a4
+Private Key: zqxe57flwv1ua2byths4p3igr8n9mdc0
+
+==================================================================
+
+git checkout app/code/Kensium/Customization/Controller/Product/GetPdpHtml.php app/code/Kensium/Customscript/Helper/Salesorderfiles.php app/design/frontend/Slcactivewear/default/Kensium_Customization/templates/order/history.phtml
+app/design/frontend/Slcactivewear/default/Kensium_Customization/templates/product/view/type/ajaxpdp.phtml
+
+
+
+
+
+
+git checkout app/code/Kensium/Customization/Controller/Product/GetPdpHtml.php app/code/Kensium/Customscript/Helper/Salesorderfiles.php app/design/frontend/Slcactivewear/default/Kensium_Customization/templates/order/history.phtml app/design/frontend/Slcactivewear/default/Kensium_Customization/templates/product/view/type/ajaxpdp.phtml

@@ -1,0 +1,10 @@
+ 'host' => '127.0.0.1',
+        'username' => '4xuqt3dyyz42s_stg',
+        'dbname' => '4xuqt3dyyz42s_stg',
+        'password' => 'ajVgGeYlY42XoFU',
+      ),
+mysqldump -h 127.0.0.1 -u eyn5ysanqgrdc_stg -p eyn5ysanqgrdc_stg --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/eyn5ysanqgrdc_stg/var/backups/Stg_$(date +%d-%b-%Y).sql.gz
+Pae0Ahngah
+
+
+3UqmLZqwDypM2zv9cXBH  --> Password to pull the code

@@ -1,0 +1,41 @@
+pre=prod'
+
+host' => 'webscale-pharmacann-production-mysql.privatelink.mysql.database.azure.com',
+                'dbname' => 'pharmacann',
+                'username' => 'pharmacann@webscale-pharmacann-production-mysql',
+                'password' => 'KpsWHvBePMbXbYKmARgmBiKxeMHse9',
+
+mysqldump -h webscale-pharmacann-production-mysql.privatelink.mysql.database.azure.com --user=pharmacann@webscale-pharmacann-production-mysql --password  --single-transaction --skip-triggers pharmacann | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > pharmacann_preprod_April_15_2022.sql.gz
+
+
+
+
+
+
+staging
+
+'host' => 'webscale-pharmacann-staging-mysql.privatelink.mysql.database.azure.com',
+                'dbname' => 'pharmacann_stage',
+                'username' => 'pharmacann_stage@webscale-pharmacann-staging-mysql',
+                'password' => 'CjbZnEmVXGq4ZkB2pB3csBZaDz96od',
+
+mysqldump -h webscale-pharmacann-staging-mysql.privatelink.mysql.database.azure.com --user=pharmacann_stage@webscale-pharmacann-staging-mysql --password  --single-transaction --skip-triggers pharmacann_stage | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > pharmacann_staging_April_15_2022.sql.gz
+
+mysql -h webscale-pharmacann-staging-mysql.privatelink.mysql.database.azure.com -u pharmacann_stage@webscale-pharmacann-staging-mysql -p -A
+
+
+mysqldump -h webscale-pharmacann-staging-mysql.privatelink.mysql.database.azure.com -u pharmacann_stage@webscale-pharmacann-staging-mysql -p pharmacann_stage core_config_data > coreconfigdata_stg_April_15_2022.sql
+
+scp pharmacann_preprod_April_15_2022.sql.gz.sql.gz mariappan.p@104.43.128.148:/home/mariappan.p/dbbackups
+
+
+mysql -h webscale-pharmacann-production-mysql.privatelink.mysql.database.azure.com -u pharmacann@webscale-pharmacann-production-mysql -p pharmacann -A
+
+
+
+
+mysql -h webscale-pharmacann-staging-mysql.privatelink.mysql.database.azure.com -u pharmacann_stage@webscale-pharmacann-staging-mysql -p pharmacann_stage < coreconfigdata_stg_April_15_2022.sql
+
+
+
+zcat -f pharmacann_preprod_April_15_2022.sql.gz | sed -re 's/DEFINER=`[^`]+`@`[^`]+`//' | mysql -h webscale-pharmacann-staging-mysql.privatelink.mysql.database.azure.com --user pharmacann_stage@webscale-pharmacann-staging-mysql -p pharmacann_stage

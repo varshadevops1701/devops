@@ -1,0 +1,41 @@
+ssh yoogis-closet-m2-production-nfs
+
+
+
+Production M1
+ssh mariappan.p@50.19.58.98
+
+Staging M1
+ssh mariappan.p@34.202.15.189
+
+
+M1====/var/www/shared/www.yoogiscloset.com == media
+
+
+M2===cd /mnt/shared-m1/wwww.yoogis.closest
+
+mnt/shared-m1/www.yoogiscloset.com/media == m1
+
+/var/www/shared/backend.yoogiscloset.com/pub== m2
+
+media path  
+
+
+
+tar --exclude='./catalog' --exclude='./consign' -cvzf /home/webscalebuilder/backups/stg_media_$(date +%d-%b-%Y).tar.gz .
+
+
+
+/home/webscalebuilder/backups/stg_media_08-Apr-2022.tar.gz
+
+
+
+$#@!shenronZen3722
+
+
+[19:01] Shanmukha P
+$shenronZen3722
+
+[19:01] Shanmukha P
+Webscale
+

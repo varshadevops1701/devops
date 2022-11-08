@@ -1,0 +1,17 @@
+
+M2 PRE_PROD
+
+Endpoint - yoogis-closet-production-db.cluster-cqoqtyczhmdf.us-east-1.rds.amazonaws.com
+Mysql username - mysqluser_lit
+Password - 3bSMKR646qCHqBy8yvcRSf6ZRPMQAA
+
+onetimesecret password:   cqoqtyczhmdf
+
+mysql -h yoogis-closet-production-db.cluster-cqoqtyczhmdf.us-east-1.rds.amazonaws.com -u mysqluser_lit -p
+
+
+
+
+M1 production
+
+mysql -h webscale-yoogiescloset-rds-instance.cqoqtyczhmdf.us-east-1.rds.amazonaws.com -u mysqluser_lit -p

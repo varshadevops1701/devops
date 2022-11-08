@@ -1,0 +1,33 @@
+Step 1:First we need 50(data center)   server
+
+
+Step 2a: we have nexcess access for this project and We need to add data center server (50 server) ssh key in the nexcess protal and For that first we need to verify the ssh key in the parking zone 50 server if not there we use "ssh-keygen"  command to generate new one and we can find the genrated one cd .ssh and we need to add pub key in the nexcess protal.
+
+
+Step 2b: In nexcess protal we need to select on the parking zone client and go to  the SSH keys option,  if we dont have access to nexxcess protal use ssh-agent in jenkins pipeline syntax
+
+
+.Step 3:  Go to jenkins and click on manage jenkins ==> manage nodes and clouds,  We need to verify the parking zone node if not there we can add new one
+
+
+Step 4:  We need to verify whether the job is there or not if not there create new job and select list view and click on ok and click on home button
+
+Step 5:  Under the created job we need to create the respective jobs for git pull and db backup and  for magento commands
+
+Step6a: First we need freestyle job it will build when the merge happended in version control and disable the project because we need to verify and modify the changes
+
+
+Step 6b: Created one pipeline job for gitpull it  is based on the fress style if the freestyle success then only the pipeline job build.
+
+Step 6c:  We need one more pipeline job for magento deployment commands and this is based on the gitpull pipleine job.
+
+
+Step 7:  Reachout to the TL and Developer regarding the below details
+
+1.Magento root path
+
+2. branch name in root path
+
+3. commands for staging deployment
+
+4. Repository URL

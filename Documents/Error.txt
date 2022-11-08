@@ -1,0 +1,664 @@
+Publish Customization
+
+Compiled projects: ARReleaseProcessShipmentCountersFixExt2,KNBCKlingspor[[21.204.0055]][D2022Mar29],KNShipviaShipmentTerms[21.204.0055][03082022],KNVendorPartinclusion,KNVXAddressFix[21.204.0055][D20220321],ManualTax,PrintCustomerRefundPkg,PXSOAttributeSupportExtPkg,TransferDefault,KNBigCGuestCustomer[21.204.0055][V06][06212022],KNCommercePro[2021R2][V17][KS12][19MAY2022]1,ShipStationAcumatica2021R2,KNPayPalInvoicing[21.200.0145][D2022Feb09],KNEbayIntegrationWithSS[21.204.0055][27092022],FusionRMS21R28.10.42022.02.15,KNOnloyaltyGiftCards[21.204.0055][D2022Mar29],KK[212040055][20220111],KNCapturePartialAmount[21R2][D2022Mar22],KWSScreenMods
+
+Validation started.
+
+Copying the website c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ap\ap301000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ap\ap301000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar101000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar101000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar201000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar201000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar205000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar205000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar302000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar302000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar303000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar303000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar508000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar508000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_bc\bc201000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_bc\bc201000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ca\ca205000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ca\ca205000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_cr\cr101000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_cr\cr101000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_cs\cs206500.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_cs\cs206500.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_cs\cs207700.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_cs\cs207700.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\Pages_FR\FR301000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\Pages_FR\FR301000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\Pages_FR\FR302010.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\Pages_FR\FR302010.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_fr\fr400002.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_fr\fr400002.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in101000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in101000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in201000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in201000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in202000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in202000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in202500.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in202500.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in204000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in204000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in204060.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in204060.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in209500.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in209500.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in301000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in301000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in304000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in304000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in401000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in401000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_po\po301000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_po\po301000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_po\po302000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_po\po302000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so101000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so101000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so201000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so201000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so301000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so301000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so302000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so302000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so303000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so303000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so501000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so501000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so503000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so503000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_tx\tx205000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_tx\tx205000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\APInvoiceEntry.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\ARPaymentEntryExt.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\ARPaymentExt.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\ARReleaseProcess_ShipmentCountersFixExt.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\ARReleaseProcessExt.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\CustomerMaint.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\Messages.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\SOInvoiceEntry.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\SOOrderEntry.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\SOOrderEntryPXExt.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\SOOrderPXExt.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\SOOrderTypeMaintPXExt.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\EbayIntegrationReleaseNotes.txt
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\Fusion.WMS.Basic.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KKCustomItemInq.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KN.CapturePartialAmt.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KN.CP.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KN.eBayIntegration.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KN.License.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KN.PILicense.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KN.S3Images.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KNBCGuestCustomer.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KNBCKlingspor.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KNOnLoyalty.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KNPayPalInvoicing.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\OnloyaltyLib.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\PayPal.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\Release Notes.txt
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\ReleaseDocKNVXAddressFix[21.204.0055][D20220318].txt
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\ReleaseNotes.txt
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\ShipStation.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\ShipViaShipmentTermsReleaseNotes.txt
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Content\svg_icons\ebay-icon.svg
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Frames\KPPaymentConnector.html
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Icons\Kensium Onloyalty GiftCard Release Notes.txt
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Icons\Kensium Partial Capture Release Notes.txt
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Icons\KENSIUM.jpg
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Icons\SYKENSIUM.jpg
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB101000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB101000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB501000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB501000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB501010.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB501010.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB502000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB502000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB503000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB503000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB504000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB504000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB505000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB505000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB506000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB506000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB507000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB507000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB508000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB508000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB509000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\EB\EB509000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\FO\FO101000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\FO\FO101000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\FR\FR301000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\FR\FR301000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\FR\FR302010.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\FR\FR302010.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\FR\FR400002.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\FR\FR400002.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KL\KL501000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KL\KL501000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP1000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP1000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP1010.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP1010.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP1020.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP1020.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP1030.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP1030.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP2000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP2000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP3010.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP3010.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5010.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5010.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5020.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5020.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5030.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5030.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5040.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5040.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5050.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5050.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5060.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5060.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5070.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5070.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5080.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5080.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5090.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5090.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5091.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5091.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5092.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNCP5092.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNPI1010.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNPI1010.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNPI2010.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNPI2010.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNPI2020.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNPI2020.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNPI5010.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNPI5010.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNPI5020.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNPI5020.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNPI5030.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KN\KNPI5030.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KP\KP401000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\KP\KP401000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\SS\SS101000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\SS\SS101000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\SS\SS201000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\SS\SS201000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\SS\SS301000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\SS\SS301000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\SS\SS401000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\SS\SS401000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\SS\SS501000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Pages\SS\SS501000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_AP_APTran_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_AR_ARRegister_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_AR_SalesPerson_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_IN_INRegister_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_SO_SOLine_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_SO_SOOrder_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_SO_SOOrderFilter_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_TX_Tax_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\APInvoiceEntry.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\ARPaymentEntryExt.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\ARPaymentExt.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\ARReleaseProcessExt.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\CustomerMaint.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\Messages.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_AP_APTran_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_AR_ARRegister_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_AR_SalesPerson_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_IN_INRegister_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_SO_SOLine_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_SO_SOOrderFilter_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_SO_SOOrder_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\PX_Objects_TX_Tax_extensions.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\SOInvoiceEntry.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\SOOrderEntry.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\SOOrderEntryPXExt.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\SOOrderPXExt.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\App_RuntimeCode\SOOrderTypeMaintPXExt.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\EbayIntegrationReleaseNotes.txt
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\Fusion.WMS.Basic.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KKCustomItemInq.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KN.CapturePartialAmt.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KN.CP.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KN.eBayIntegration.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KN.License.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KN.PILicense.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KN.S3Images.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KNBCGuestCustomer.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KNBCKlingspor.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KNOnLoyalty.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\KNPayPalInvoicing.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\OnloyaltyLib.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\PayPal.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\Release Notes.txt
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\ReleaseDocKNVXAddressFix[21.204.0055][D20220318].txt
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\ReleaseNotes.txt
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\ShipStation.dll
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Bin\ShipViaShipmentTermsReleaseNotes.txt
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\Content\svg_icons\ebay-icon.svg
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ap\ap301000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ap\ap301000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar101000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar101000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar201000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar201000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar205000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar205000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar302000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar302000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar303000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar303000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar508000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ar\ar508000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_bc\bc201000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_bc\bc201000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ca\ca205000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_ca\ca205000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_cr\cr101000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_cr\cr101000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_cs\cs206500.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_cs\cs206500.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_cs\cs207700.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_cs\cs207700.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\Pages_FR\FR301000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\Pages_FR\FR301000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\Pages_FR\FR302010.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\Pages_FR\FR302010.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\Pages_FR\fr400002.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\Pages_FR\fr400002.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in101000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in101000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in201000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in201000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in202000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in202000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in202500.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in202500.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in204000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in204000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in204060.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in204060.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in209500.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in209500.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in301000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in301000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in304000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in304000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in401000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_in\in401000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_po\po301000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_po\po301000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_po\po302000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_po\po302000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so101000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so101000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so201000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so201000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so301000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so301000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so302000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so302000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so303000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so303000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so501000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so501000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so503000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_so\so503000.aspx.cs
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_tx\tx205000.aspx
+
+Patching the file c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite\CstPublished\pages_tx\tx205000.aspx.cs
+
+Done
+
+Validating Binary Files
+
+Validating Sql Scripts
+
+Validating the website c:\deployment\sites\PR00001210\Customization\PR00001210\siterootValidation\siterootWebsite
+
+IIS APPPOOL\PR00001210
+
+Building directory '\WebSiteValidationDomain\App_RuntimeCode\'.
+
+\App_RuntimeCode\ARReleaseProcess_ShipmentCountersFixExt.cs(41): error CS0117: 'PXAutomation' does not contain a definition for 'CompleteSimple'
+
+\App_RuntimeCode\ARReleaseProcess_ShipmentCountersFixExt.cs(42): error CS0117: 'PXAutomation' does not contain a definition for 'CompleteSimple'
+
+\App_RuntimeCode\ARReleaseProcess_ShipmentCountersFixExt.cs(41): error CS0117: 'PXAutomation' does not contain a definition for 'CompleteSimple'
+
+Compiler time, in seconds: 4.6423048
+
+Warning: The File#Bin\ReleaseNotes.txt object of the File type from the KNCommercePro[2021R2][V17][KS12][19MAY2022]1 project will be ignored because this project has lower level than the ShipStationAcumatica2021R2 project, which defines the same object.
+Warning: The Sql#KNLicense object of the Sql type from the KNCommercePro[2021R2][V17][KS12][19MAY2022]1 project will be ignored because this project has lower level than the KNPayPalInvoicing[21.200.0145][D2022Feb09] project, which defines the same object.
+
+Validation failed.

@@ -1,0 +1,32 @@
+@general we are publishing package in Acumatica
+
+@asha iam deactivating connector
+
+cc @naveen @swapna
+
+upload the latest package
+
+screenshot multiples the uploaded and old package and post in group channel NaveenB
+
+more items -> connector -> intialise -> deactive click yes 
+Pause sync to magento
+
+check new packages and unckeck old packages
+
+save it for each package 
+
+publish to multiple tenants 
+
+if error in publishing ask naveen and change the level 17
+
+and publish again multiple tenants
+
+select both package options check box
+
+and execute check box
+
+send the website updated to naveen
+
+activate the connector again 
+
+@general we have published the packages 

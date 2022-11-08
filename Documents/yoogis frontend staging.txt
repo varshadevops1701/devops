@@ -1,0 +1,48 @@
+/var/www/frontend.yoogiscloset.com
+
+sudo -iu www-upload
+ssh yoogis-closet-m2-production-node-server
+
+
+
+
+mkdir /etc/ssl/certs_2022 && openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -subj "/C=IN/ST=Jharkand/L=Jharkand/O=Kensium/CN=magerv.com" -keyout /etc/ssl/certs_2022/nginx-selfsigned.key -out /etc/ssl/certs_2022/nginx-selfsigned.crt
+and edit in default
+listen 443 ssl;
+ssl on;
+ssl_certificate /etc/ssl/certs_2022/nginx-selfsigned.crt;
+ssl_certificate_key /etc/ssl/certs_2022/nginx-selfsigned.key;
+
+
+
+m1 production:
+
+ssh mariappan.p@50.19.58.98
+sudo -iu www-upload
+DocRoot: /var/www/www.yoogiscloset.com
+Admin URL: https://admin.yoogiscloset.com/yoogiscl_admin/
+User: devops
+pass: Doken$1um21
+
+
+
+Data Center Server:
+ssh yoogiscloset@50.19.80.38
+password: Oothaizeequah0e
+
+
+ssh yoogis-closet-m2-production-nfs
+mysqldump -h rds.webscale.vpc --no-tablespaces --set-gtid-purged=OFF --triggers --routines -u yoogiscloset_m2 -p yoogiscloset_m2 | gzip --to-stdout > yoogiscloset_m2stg_feb_25_2022.sql.gz
+
+
+
+ 'host' => 'rds.webscale.vpc',
+                'dbname' => 'yoogiscloset_m2',
+                'username' => 'yoogiscloset_m2',
+                'password' => '8PgLNxYLW6CfmHkRMC4hJqpGLzpX46',
+				
+Once we switch to the user and Actually db details present in the container once we run shell.sh then we enter into the container.
+				
+	mysqldump -h rds.webscale.vpc --no-tablespaces --set-gtid-purged=OFF --triggers --routines -u yoogiscloset_m2 -p yoogiscloset_m2 algoliasearch_queue > algoliasearch_queue_stg_2jun2022.sql			
+				
+scp le_connector.zip  mariappan.p@50.19.58.98:/home/mariappan.p/dbbackups

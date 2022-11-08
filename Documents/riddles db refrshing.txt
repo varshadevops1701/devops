@@ -1,0 +1,59 @@
+
+
+production server
+
+ssh abc64d8c_3@1ab4944c89.nxcli.net
+MysDyesScampsOilier
+
+
+host' => 'localhost',
+                'dbname' => 'abc64d8c_141d8f',
+                'username' => 'abc64d8c_141d8f',
+                'password' => 'Toilet97Sorts47Dip43Poky51',
+mysqldump -h localhost -u abc64d8c_141d8f -p abc64d8c_141d8f --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > riddlesjewelry_prod_2022_March_30.sql.gz
+
+
+mysql -h localhost -u abc64d8c_141d8f -p abc64d8c_141d8f -A
+
+
+
+
+ssh ac856ab1_3@28e8399bc4.nxcli.net
+StoolsFreeCooingVogues
+
+=================================================================
+==============================================================================
+
+
+
+
+staging 
+ssh ac856ab1_3@28e8399bc4.nxcli.net
+StoolsFreeCooingVogues
+
+
+'host' => 'localhost',
+                'dbname' => 'abc64d8c_riddlesstg',
+                'username' => 'abc64d8c_riddlesstg',
+                'password' => 'TeamsWhisksMildewJetsam89',
+                
+                
+mysqldump -h localhost --user=abc64d8c_riddlesstg --password  --single-transaction --skip-triggers abc64d8c_riddlesstg | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > abc64d8c_riddles_staging_db-30_March_2022.sql.gz
+
+
+mysql -h localhost -u abc64d8c_riddlesstg -p abc64d8c_riddlesstg -A
+
+mysqldump -h localhost -u abc64d8c_riddlesstg -p abc64d8c_riddlesstg core_config_data > coreconfigdata_stg_march30-2022.sql
+
+scp riddlesjewelry_prod_2022_March_30.sql.gz ac856ab1_3@28e8399bc4.nxcli.net:/chroot/home/ac856ab1/dbbackups/
+
+
+
+select * from core_config_data where path like "%web%";
+
+mysql -h localhost -u abc64d8c_riddlesstg -p abc64d8c_riddlesstg < coreconfigdata_stg_march30-2022.sql
+
+zcat -f riddlesjewelry_prod_2022_March_30.sql.gz | sed -re 's/DEFINER=`[^`]+`@`[^`]+`//' | mysql -h localhost --user abc64d8c_riddlesstg -p abc64d8c_riddlesstg
+
+
+

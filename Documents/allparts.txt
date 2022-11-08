@@ -1,0 +1,42 @@
+PRODUCTION
+  'host' => '127.0.0.1',
+                'dbname' => 'a50aea66_sj7sja0',
+                'username' => 'a50aea66_sj7sja0',
+                'password' => 'HempenScarfRubleWants',
+				
+				
+				
+mysqldump -h 127.0.0.1 -u a50aea66_sj7sja0 -p a50aea66_sj7sja0 --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /home/a50aea66/dbbackups/a50aea66_sj7sja0_4march_2022.sql.gz          
+
+'host' => '127.0.0.1',
+                'dbname' => 'a50aea66_sj7sja0',
+                'username' => 'a50aea66_sj7sja0',
+                'password' => 'HempenScarfRubleWants',
+
+ssh a50aea66_7@a018223686.nxcli.net
+MarkPunditDanderIncite
+cd a018223686.nxcli.net/html
+
+STAGING
+'host' => '127.0.0.1',
+                'dbname' => 'a50aea66_sj7sja1',
+                'username' => 'a50aea66_sj7sja0',
+                'password' => 'HempenScarfRubleWants',
+				
+				
+tar --exclude='./pub/media' --exclude='./var' --exclude='./*.gz' --exclude='./var-old' --exclude='./*.zip' --exclude='./*.sql' -cvzf /home/a50aea66/a018223686.nxcli.net/htmlcode_stg_04-march-2022.tar.gz .
+tar --exclude='./pub/media' --exclude='./var' --exclude='./var-old' -cvzf /home/a50aea66/allpartsinc.com/html/htmlcode_04-march-2022.tar.gz .
+
+
+mv /home/a50aea66/allpartsinc.com/htmlcode_04-march-2022.tar.gz /home/a50aea66/a018223686.nxcli.net/
+
+php bin/magento info:adminuri
+
+php bin/magento admin:user:unlock  username(kensium)
+
+n98-magenrun2 admin:user:list
+
+n98-magenrun2 admin:user:delete
+
+
+n98-magenrun2 admin:user change-password

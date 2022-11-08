@@ -1,0 +1,5 @@
+mkdir /home/abc64d8c/bkp$(date +%d-%b-%Y)
+
+
+
+find /home/abc64d8c/riddlesjewelry.com/var/log/ -type f -mtime +30 -print -exec mv {} "/home/abc64d8c/bkp$(date +%d-%b-%Y)" \;

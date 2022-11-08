@@ -1,0 +1,60 @@
+-------------------------Kensium Demo site creating in NEXCESS-----------------------------
+Log into your Nexcess Portal.
+Click Plan: Kensium Apps and Products
+click on Add site and add domain given testsdk.kensiumcommerce.com
+Create Site
+Edit the domain and Modify the master domain 
+When complete, view options for interacting with your new site by clicking the Site Dashboard button
+left tab control panel -> launch control panel
+change domains 
+Hosting features ->Mysql
+Databases -> take the domain from email provided
+Database name: mage242qav3
+create User checkbox
+Username: mage242qav3
+Password generate: HitherWelkinUrchinBurrs60
+MySQL User Permissions: select all
+When connecting from: %
+Add
+
+in existing DB you get full Database name 
+a7bc26b7_mage243qav3
+
+click on Manage Users 
+check all permissions in MySQL User Permissions
+When Connecting from: Localhost
+Add
+
+Go to the Nexcess Portal Containers: Elasticsearch enable
+cg-2331-elasticsearch.us-midwest-1.nxcli.net 41237
+
+Enable SSL for domain
+
+
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 .
+
+php bin/magento setup:install --base-url=https://testsdk.kensiumcommerce.com/ --db-host=localhost --db-name=a7bc26b7_testsdk --db-user=a7bc26b7_testsdk --db-password=OuterRebutsWhelkSmoker83 --admin-firstname=dev --admin-lastname=ops --admin-email=devops@kensium.com --admin-user=devops --admin-password='doken$1um' --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 --elasticsearch-host=cg-2331-elasticsearch.us-midwest-1.nxcli.net --elasticsearch-port=41237
+
+php -d memory_limit=-1 bin/magento sampledata:deploy
+php bin/magento se:up
+
+php bin/magento module:disable Magento_TwoFactorAuth
+
+php bin/magento setup:di:compile
+
+php bin/magento setup:static-content:deploy -f
+
+php bin/magento  c:c
+
+php bin/magento  c:f
+
+cd .config/composer/
+cat auth.json
+
+|---"username": "cd53b3210bc072f4f5212cb450b370af",  ||
+|---"password": "256a1d434ca5b4d9bf9aa1421fcf3d42"    | ----> OLD 
+
+username": "059ba7ce1afdc5317ecce4570cecd858",
+"password": "a835179cff1684379dcf76bbbd218373"
+
+php bin/magento admin:user:create --admin-user="kirank" --admin-password="admin@123" --admin-email="kirank@kensium.com" --admin-firstname="kiran" --admin-lastname="p"

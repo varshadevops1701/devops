@@ -1,0 +1,303 @@
+
+North40 - Magento and Acumatica production deployment is in progress
+
+North40 - Magento production deployment initiated
+
+North40 - Acumatica production deployment initiated 
+
+
+DATA CENTER SERVER:
+
+ssh north40@50.19.80.38
+Password : N07tH(3nTr@1!$39
+Old Password: aishuniph9Hoor
+N07tH(3nTr@1!$39
+PRODUCTION
+
+ssh varshap@104.207.225.114      == production
+password: uxuV{(64Y6I07M7R
+uxuV{(64Y6I07M7R2022
+
+uxuV{(64Y6I07M7R2022
+sudo -u northfou bash 
+cd 
+Doken$1um2022
+kensium@123
+UAT
+ssh varshap@104.207.225.118
+UAT pssword:  Hw*iX|HnS=/kzkNA
+php bin/magento indexer:reindex amasty_reports_rule_product
+php bin/magento indexer:reindex amasty_reports_product_rule
+3UqmLZqwDypM2zv9cXBH  --> Password to pull the code
+"B1t6U(k3tKen$1um
+"
+B1t6U(k3tKen$1um
+admin password   devopsken$1um
+
+mysqldump -h gpc002-db1-int --user=northfou_prod --password  --single-transaction --skip-triggers northfou_prod | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > 2022-06-18-northfou.sql.gz
+mysqldump -h gpc002-db1-int --user=northfou_prod --password  --single-transaction --skip-triggers northfou_prod | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > $(date +%Y-%m-%d)_northfou.sql.gz == 2022-07-18
+mysqldump -h gpc002-db1-int --user=northfou_prod --password  --single-transaction --skip-triggers northfou_prod | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > $(date +%Y-%b-%d)-northfou.sql.gz == 2022-Jul-18
+mysqldump -h gpc002-db1-int --user=northfou_prod --password  --single-transaction --skip-triggers northfou_prod | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > $(date +%Y-%B-%d)-northfou.sql.gz == 2022-July-18
+2022-07-13_Attributes_northfou.sql.gz
+
+
+mysqldump -h gpc002-db1-int -u northfou_prod -p northfou_prod core_config_data > coreconfigdata_stg_$(date +%Y-%m-%d).sql
+		  
+	 'host' => 'gpc002-db1-int',
+                'dbname' => 'northfou_prod',
+                'username' => 'northfou_prod',
+                'password' => 'MuffedScopeBusedMotile85',
+			  
+/home/northfou/backups/env.php_bkpfiles/
+
+
+mysqldump -h gpc002-db1-int --user=northfou_prod --password  --single-transaction --skip-triggers northfou_prod | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > $(date +%d-%b-%Y)-northfou.sql.gz
+
+scp a58a79bd_20@ab0308d833.nxcli.net:/home/a58a79bd/backups/20July2022/KNGetAttributeDetails20220720.csv .
+scp  a58a79bd_20@ab0308d833.nxcli.net:/home/a58a79bd/backups/20July2022/outputfile/
+
+
+host' => 'gpc002-db1-int', 
+
+              'dbname' => 'northfou_prod', 
+
+              'username' => 'northfou_prod', 
+			  
+			  git pull bitbucket production 
+			  
+			  3UqmLZqwDypM2zv9cXBH  --> Password to pull the code
+			  
+			  pkill -f queue
+			  
+			  
+			  
+	/home/a58a79bd/backups/08June2022/output    test pwd
+	
+	3UqmLZqwDypM2zv9cXBH  --> Password to pull the code
+	0 2 * * * /bin/sh /chroot/home/northfou/prod.north40.com/html/malscanner/getchecksums.sh d >> /chroot/home/northfou/prod.north40.com/html/var/log/cc_scan.log
+	
+	 /bin/sh /chroot/home/northfou/prod.north40.com/html/malscanner/getchecksums.sh m
+	 
+	 
+	 
+	 
+North40 (Magento) - Completed Production Deployment.
+
+mysqldump -h gpc002-db1-int --user=northfou_prod --password  --single-transaction --skip-triggers northfou_prod | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > 2022-07-13_Magento_northfou.sql.gz
+
+             'host' => 'gpc002-db1-int', 
+
+              'dbname' => 'northfou_prod', 
+
+              'username' => 'northfou_prod', 
+
+              'password' => '*****************', 
+			  
+			  
+	 'host' => 'gpc002-db1-int',
+                'dbname' => 'northfou_prod',
+                'username' => 'northfou_prod',
+                'password' => 'MuffedScopeBusedMotile85',
+			  
+ssh north40@50.19.80.38
+Password : N07tH(3nTr@1!$39
+Old Password: aishuniph9Hoori
+
+
+ssh varshap@104.207.225.114 == production
+
+password: uxuV{(64Y6I07M7R
+uxuV{(64Y6I07M7R
+sudo -u northfou bash 
+cd 
+
+pkill -q queue
+
+/bin/sh /chroot/home/northfou/prod.north40.com/html/malscanner/getchecksums.sh m
+
+Initiating the Malware scanning in master mode
+pkill -q queue
+/bin/sh /chroot/home/northfou/prod.north40.com/html/malscanner/getchecksums.sh m
+/bin/sh /chroot/home/northfou/prod.north40.com/html/malscanner/getchecksums.sh m
+ssh varshap@104.207.225.118
+UAT pssword:  Hw*iX|HnS=/kzkNA
+
+2022-07-13_Attributes_northfou.sql.gz
+JulyN0rTh4oF@sT1yO1$02$
+
+php UpdateAttributeWithsql.php
+JulyN0rTh4oF@sT1yO1$02$
+
+/home/northfou/public_html/pub/media/scripts
+
+3UqmLZqwDypM2zv9cXBH  --> Password to pull the code
+
+[northfou@gpc002-lb1 public_html]$ git pull bitbucket production --ff
+Password for 'https://kensiumdevops@bitbucket.org': 
+From https://bitbucket.org/kensium-solutions/north40-magento
+ * branch              production -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ app/code/Kensium/CheckoutFields/Api/Data/ShippingDeliveryNoteInterface.php                     | 19 ++++++++++
+ app/code/Kensium/CheckoutFields/Api/GuestShippingDeliveryNoteManagementInterface.php           | 16 ++++++++
+ app/code/Kensium/CheckoutFields/Api/ShippingDeliveryNoteManagementInterface.php                | 16 ++++++++
+ app/code/Kensium/CheckoutFields/Block/Order/ShippingDeliveryNote.php                           | 49 ++++++++++++++++++++++++
+ app/code/Kensium/CheckoutFields/Model/CmsConfigProvider.php                                    | 48 ++++++++++++++++++++++++
+ app/code/Kensium/CheckoutFields/Model/Data/ShippingDeliveryNote.php                            | 27 ++++++++++++++
+ app/code/Kensium/CheckoutFields/Model/GuestShippingDeliveryNoteManagement.php                  | 42 +++++++++++++++++++++
+ app/code/Kensium/CheckoutFields/Model/ShippingDeliveryNoteManagement.php                       | 77 ++++++++++++++++++++++++++++++++++++++
+ app/code/Kensium/CheckoutFields/Observer/SavePoBoxInOrder.php                                  |  1 +
+ app/code/Kensium/CheckoutFields/Plugin/Block/Adminhtml/SalesOrderViewInfo.php                  | 26 +++++++++++++
+ app/code/Kensium/CheckoutFields/Setup/UpgradeData.php                                          | 68 ++++++++++++++++++++++++++++++++++
+ app/code/Kensium/CheckoutFields/etc/adminhtml/di.xml                                           |  6 +++
+ app/code/Kensium/CheckoutFields/etc/di.xml                                                     |  5 +++
+ app/code/Kensium/CheckoutFields/etc/extension_attributes.xml                                   |  4 ++
+ app/code/Kensium/CheckoutFields/etc/frontend/di.xml                                            | 22 +++++++++++
+ app/code/Kensium/CheckoutFields/etc/module.xml                                                 |  2 +-
+ app/code/Kensium/CheckoutFields/etc/webapi.xml                                                 | 21 +++++++++++
+ app/code/Kensium/CheckoutFields/view/adminhtml/layout/sales_order_view.xml                     |  6 +++
+ .../Kensium/CheckoutFields/view/adminhtml/templates/order/view/shipping_delivery_note.phtml    | 10 +++++
+ app/code/Kensium/CheckoutFields/view/frontend/layout/sales_guest_view.xml                      |  9 +++++
+ app/code/Kensium/CheckoutFields/view/frontend/layout/sales_order_view.xml                      |  9 +++++
+ .../Kensium/CheckoutFields/view/frontend/templates/order/view/shipping_delivery_note.phtml     | 17 +++++++++
+ .../Kensium/CheckoutFields/view/frontend/web/js/action/save-order-shipping-delivery-note.js    | 72 ++++++++++++++++++++++++++++++++++++
+ app/code/Kensium/CheckoutFields/view/frontend/web/js/model/shipping-save-processor/default.js  |  1 -
+ app/code/Kensium/CheckoutFields/view/frontend/web/js/view/shipping-delivery-note.js            | 45 +++++++++++++++++++++++
+ app/code/Kensium/CheckoutFields/view/frontend/web/template/shipping_delivery_note.html         | 20 ++++++++++
+ app/design/frontend/Flyproject/default/Magento_Checkout/web/js/view/summary/shipping.js        | 96 ++++++++++++++++++++++++++++++++++++++++++++++++
+ app/design/frontend/Flyproject/default/Magento_Checkout/web/template/sidebar.html              | 31 ++++++++++++++++
+ app/design/frontend/Flyproject/default/Wyomind_PickupAtStore/templates/pickupatstore.js.phtml  | 12 ++++++
+ .../frontend/Flyproject/default/Wyomind_PickupAtStore/web/js/view/shipping-information.js      | 45 +++++++++++++++++++++++
+ app/design/frontend/Flyproject/default/i18n/en_US.csv                                          |  1 +
+ app/design/frontend/Flyproject/default/web/magepack/bundle-checkout.js                         | 16 +++++---
+ app/design/frontend/North40/default/Magento_Checkout/layout/checkout_index_index.xml           | 35 ++++++++++++++++++
+ app/design/frontend/North40/default/Magento_Checkout/web/js/view/summary/shipping.js           | 96 ++++++++++++++++++++++++++++++++++++++++++++++++
+ .../North40/default/Magento_Checkout/web/template/shipping-address/shipping-method-item.html   |  9 ++---
+ .../North40/default/Magento_Checkout/web/template/shipping-address/shipping-method-list.html   | 22 +++++++++++
+ app/design/frontend/North40/default/Magento_Checkout/web/template/shipping.html                |  4 +-
+ app/design/frontend/North40/default/Magento_Checkout/web/template/sidebar.html                 | 34 +++++++++++++++++
+ .../frontend/North40/default/Magento_Customer/web/css/source/module/_customer-account.less     | 35 +++++++++++++++++-
+ app/design/frontend/North40/default/Magento_Sales/templates/order/info.phtml                   | 10 ++++-
+ app/design/frontend/North40/default/Wyomind_PickupAtStore/templates/pickupatstore.js.phtml     | 13 +++++++
+ app/design/frontend/North40/default/Wyomind_PickupAtStore/web/js/view/shipping-information.js  | 45 +++++++++++++++++++++++
+ .../default/Wyomind_PickupAtStore/web/template/shipping-address/shipping-method-item.html      | 11 +++---
+ app/design/frontend/North40/default/i18n/en_US.csv                                             |  1 +
+ app/design/frontend/North40/default/web/magepack/bundle-checkout.js                            | 26 +++++++------
+ app/design/frontend/SmithRogue/default/Magento_Checkout/web/js/view/summary/shipping.js        | 96 ++++++++++++++++++++++++++++++++++++++++++++++++
+ app/design/frontend/SmithRogue/default/Magento_Checkout/web/template/sidebar.html              | 30 +++++++++++++++
+ app/design/frontend/SmithRogue/default/Wyomind_PickupAtStore/templates/pickupatstore.js.phtml  | 12 ++++++
+ .../frontend/SmithRogue/default/Wyomind_PickupAtStore/web/js/view/shipping-information.js      | 45 +++++++++++++++++++++++
+ app/design/frontend/SmithRogue/default/i18n/en_US.csv                                          |  1 +
+ app/design/frontend/SmithRogue/default/web/magepack/bundle-checkout.js                         | 15 +++++---
+ app/design/frontend/Swate/default/Magento_Checkout/web/js/view/summary/shipping.js             | 96 ++++++++++++++++++++++++++++++++++++++++++++++++
+ app/design/frontend/Swate/default/Magento_Checkout/web/template/sidebar.html                   | 31 ++++++++++++++++
+ app/design/frontend/Swate/default/Wyomind_PickupAtStore/templates/pickupatstore.js.phtml       | 12 ++++++
+ app/design/frontend/Swate/default/Wyomind_PickupAtStore/web/js/view/shipping-information.js    | 45 +++++++++++++++++++++++
+ app/design/frontend/Swate/default/i18n/en_US.csv                                               |  1 +
+ app/design/frontend/Swate/default/web/magepack/bundle-checkout.js                              | 15 +++++---
+ composer.json                                                                                  |  2 +-
+ composer.lock                                                                                  | 12 +++---
+ 59 files changed, 1535 insertions(+), 58 deletions(-)
+ create mode 100644 app/code/Kensium/CheckoutFields/Api/Data/ShippingDeliveryNoteInterface.php
+ create mode 100644 app/code/Kensium/CheckoutFields/Api/GuestShippingDeliveryNoteManagementInterface.php
+ create mode 100644 app/code/Kensium/CheckoutFields/Api/ShippingDeliveryNoteManagementInterface.php
+ create mode 100644 app/code/Kensium/CheckoutFields/Block/Order/ShippingDeliveryNote.php
+ create mode 100644 app/code/Kensium/CheckoutFields/Model/CmsConfigProvider.php
+ create mode 100644 app/code/Kensium/CheckoutFields/Model/Data/ShippingDeliveryNote.php
+ create mode 100644 app/code/Kensium/CheckoutFields/Model/GuestShippingDeliveryNoteManagement.php
+ create mode 100644 app/code/Kensium/CheckoutFields/Model/ShippingDeliveryNoteManagement.php
+ create mode 100644 app/code/Kensium/CheckoutFields/Plugin/Block/Adminhtml/SalesOrderViewInfo.php
+ create mode 100644 app/code/Kensium/CheckoutFields/Setup/UpgradeData.php
+ create mode 100644 app/code/Kensium/CheckoutFields/etc/adminhtml/di.xml
+ create mode 100644 app/code/Kensium/CheckoutFields/etc/frontend/di.xml
+ create mode 100644 app/code/Kensium/CheckoutFields/etc/webapi.xml
+ create mode 100644 app/code/Kensium/CheckoutFields/view/adminhtml/layout/sales_order_view.xml
+ create mode 100644 app/code/Kensium/CheckoutFields/view/adminhtml/templates/order/view/shipping_delivery_note.phtml
+ create mode 100644 app/code/Kensium/CheckoutFields/view/frontend/layout/sales_guest_view.xml
+ create mode 100644 app/code/Kensium/CheckoutFields/view/frontend/layout/sales_order_view.xml
+ create mode 100644 app/code/Kensium/CheckoutFields/view/frontend/templates/order/view/shipping_delivery_note.phtml
+ create mode 100644 app/code/Kensium/CheckoutFields/view/frontend/web/js/action/save-order-shipping-delivery-note.js
+ create mode 100644 app/code/Kensium/CheckoutFields/view/frontend/web/js/view/shipping-delivery-note.js
+ create mode 100644 app/code/Kensium/CheckoutFields/view/frontend/web/template/shipping_delivery_note.html
+ create mode 100644 app/design/frontend/Flyproject/default/Magento_Checkout/web/js/view/summary/shipping.js
+ create mode 100644 app/design/frontend/Flyproject/default/Magento_Checkout/web/template/sidebar.html
+ create mode 100644 app/design/frontend/Flyproject/default/Wyomind_PickupAtStore/web/js/view/shipping-information.js
+ create mode 100644 app/design/frontend/Flyproject/default/i18n/en_US.csv
+ create mode 100644 app/design/frontend/North40/default/Magento_Checkout/web/js/view/summary/shipping.js
+ create mode 100644 app/design/frontend/North40/default/Magento_Checkout/web/template/shipping-address/shipping-method-list.html
+ create mode 100644 app/design/frontend/North40/default/Magento_Checkout/web/template/sidebar.html
+ create mode 100644 app/design/frontend/North40/default/Wyomind_PickupAtStore/web/js/view/shipping-information.js
+ create mode 100644 app/design/frontend/North40/default/i18n/en_US.csv
+ create mode 100644 app/design/frontend/SmithRogue/default/Magento_Checkout/web/js/view/summary/shipping.js
+ create mode 100644 app/design/frontend/SmithRogue/default/Magento_Checkout/web/template/sidebar.html
+ create mode 100644 app/design/frontend/SmithRogue/default/Wyomind_PickupAtStore/web/js/view/shipping-information.js
+ create mode 100644 app/design/frontend/SmithRogue/default/i18n/en_US.csv
+ create mode 100644 app/design/frontend/Swate/default/Magento_Checkout/web/js/view/summary/shipping.js
+ create mode 100644 app/design/frontend/Swate/default/Magento_Checkout/web/template/sidebar.html
+ create mode 100644 app/design/frontend/Swate/default/Wyomind_PickupAtStore/web/js/view/shipping-information.js
+ create mode 100644 app/design/frontend/Swate/default/i18n/en_US.csv
+[northfou@gpc002-lb1 public_html]$ 
+
+ssh northfou@172.18.121.140
+
+php -d memory_limit=2048M bin/magento setup:upgrade 
+
+setup:di:compile 
+
+php -d memory_limit=2048M bin/magento setup:di:compile
+
+setup:di:compile 
+
+php -d memory_limit=2048M bin/magento setup:static-content:deploy -f
+
+
+php -d memory_limit=2048M bin/magento static-content:deploy
+php bin/magento cache:clean && php bin/magento cache:flush 
+
+setup:static-content:deploy
+
+
+ChasteMuzzleMatzotFormal
+
+
+scp KNGetAttributeDetails20220720.csv a58a79bd_20@ab0308d833.nxcli.net:/home/a58a79bd/backups/20July2022/
+
+
+
+php bin/magento config:show dev/static/sign
+
+php bin/magento config:set dev/static/sign 1
+
+
+Initiating the Malware scanning in master mode
+
+
+
+
+
+[northfou@gpc002-lb1 public_html]$ git pull bitbucket production --ff
+Password for 'https://kensiumdevops@bitbucket.org': 
+remote: Enumerating objects: 84, done.
+remote: Counting objects: 100% (84/84), done.
+remote: Compressing objects: 100% (42/42), done.
+remote: Total 55 (delta 18), reused 5 (delta 0), pack-reused 0
+Unpacking objects: 100% (55/55), 6.32 KiB | 33.00 KiB/s, done.
+From https://bitbucket.org/kensium-solutions/north40-magento
+ * branch              production -> FETCH_HEAD
+   cb797c62..8ebb1398  production -> bitbucket/production
+Merge made by the 'ort' strategy.
+ app/code/Kensium/CustomWidget/Helper/Data.php                                             | 28 ++++++++++++++--
+ app/design/frontend/Flyproject/default/Magento_Catalog/templates/category/cms.phtml       | 19 +++++++++++
+ app/design/frontend/North40/default/Magento_Catalog/templates/category/cms.phtml          | 25 ++++++++++++++
+ app/design/frontend/SmithRogue/default/Magento_Catalog/layout/catalog_product_view.xml    |  1 +
+ .../SmithRogue/default/Magento_Catalog/layout/catalog_product_view_type_configurable.xml  | 14 ++++++++
+ app/design/frontend/SmithRogue/default/Magento_Catalog/templates/category/cms.phtml       | 19 +++++++++++
+ .../frontend/SmithRogue/default/Magento_Catalog/templates/product/view/sizechart.phtml    | 74 ++++++++++++++++++++++++++++++++++++++++++
+ .../default/WeltPixel_ProductPage/web/css/source/module/_product-detail-page.less         | 79 +++++++++++++++++++++++++++++++++++++++++++++
+ app/design/frontend/Swate/default/Magento_Catalog/templates/category/cms.phtml            | 19 +++++++++++
+ 9 files changed, 276 insertions(+), 2 deletions(-)
+ create mode 100644 app/design/frontend/Flyproject/default/Magento_Catalog/templates/category/cms.phtml
+ create mode 100644 app/design/frontend/North40/default/Magento_Catalog/templates/category/cms.phtml
+ create mode 100755 app/design/frontend/SmithRogue/default/Magento_Catalog/layout/catalog_product_view_type_configurable.xml
+ create mode 100644 app/design/frontend/SmithRogue/default/Magento_Catalog/templates/category/cms.phtml
+ create mode 100644 app/design/frontend/SmithRogue/default/Magento_Catalog/templates/product/view/sizechart.phtml
+ create mode 100644 app/design/frontend/Swate/default/Magento_Catalog/templates/category/cms.phtml

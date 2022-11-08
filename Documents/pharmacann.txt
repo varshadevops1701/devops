@@ -1,0 +1,10 @@
+mysqldump -h webscale-pharmacann-production-mysql.privatelink.mysql.database.azure.com --user=pharmacann@webscale-pharmacann-production-mysql --password  --single-transaction --skip-triggers pharmacann | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > pharmacann_June_21_2022.sql.gz
+
+
+
+
+'host' => 'webscale-pharmacann-production-mysql.privatelink.mysql.database.azure.com',
+                'dbname' => 'pharmacann',
+                'username' => 'pharmacann@webscale-pharmacann-production-mysql',
+                'password' => 'KpsWHvBePMbXbYKmARgmBiKxeMHse9',
+                'model' => 'mysql4',

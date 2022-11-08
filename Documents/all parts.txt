@@ -1,0 +1,43 @@
+ssh a50aea66_7@a018223686.nxcli.net
+MarkPunditDanderIncite
+cd a018223686.nxcli.net/html
+
+
+
+
+
+
+ssh allparts@192.64.55.140
+New Password (12/02/2020): 1xrbP1839e1f
+Password: T3GNc7ttQ8RJ
+Code path: /home/allparts/allpartsinc.com/html
+
+
+
+https://kensium.atlassian.net/browse/ALPS-352
+
+tar --exclude='./pub/media' --exclude='./var' --exclude='./var-old' -cvzf /home/a50aea66/allpartsinc.com/html/htmlcode_04-march-2022.tar.gz .
+
+mysqldump -h hostname -u username -p databasename table_name > table_name_stg_2mar2022.sql = export / backup / download
+
+
+
+mysql -h hostname -u username -p databasename < table_name_stg_2mar2022.sql = import / upload
+
+
+
+staging
+
+
+mysqldump -h 127.0.0.1 -u dclwhyijmqovy_stg -p dclwhyijmqovy_stg --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/dclwhyijmqovy/var/backup/dclwhyijmqovy_stg_2022_Jan_6.sql.gz
+L8ZRcYUZxqeXSZm
+
+'host' => '127.0.0.1',
+                'dbname' => 'a50aea66_sj7sja1',
+                'username' => 'a50aea66_sj7sja0',
+                'password' => 'HempenScarfRubleWants',
+
+
+
+
+As team is working on staging instance ,I am on hold now and I am extracting the production code folder to staging without touching staging html folder.

@@ -1,0 +1,72 @@
+ssh a7be5191_5@7634a7b9d2.nxcli.net --> production
+MilkerModalsDebtorRugged
+
+ssh a7ffd2db_5@d2c14b3127.nxcli.net --> stg.slc
+SaltedDebutAvianShrift
+
+prod:
+ssh a913eea4_5@c4a906c5c6.nxcli.net    --->mage244
+SouredXylemBionicSermon
+
+cd dbbackups
+
+host' => 'localhost',
+                'dbname' => 'a7be5191_slcactivewear2',
+                'username' => 'a7be5191_wear2',
+                'password' => 'PoetryAcrossTiesAmp31',
+
+mysqldump -h localhost --user=a7be5191_wear2 --password --single-transaction --skip-triggers a7be5191_slcactivewear2 | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > slcactivewear_prod_db_27_May_2022.sql.gz
+
+mysql -h localhost -u a7be5191_wear2 -p a7be5191_slcactivewear2 -A
+
+mysqldump -h 127.0.0.1 --user=a7be5191_wear2 --password --single-transaction --extended-insert --quick --skip-triggers a7be5191_slcactivewear2 | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /home/a7be5191/dbbackup/slcactivewear_prod_db_$(date +%d-%b-%Y).sql.gz
+
+
+
+
+
+staging:
+
+  'host' => '127.0.0.1',
+                'dbname' => 'a7ffd2db_slcstage',   a7ffd2db_slcstage
+                'username' => 'a7ffd2db_stage',
+                'password' => 'SenateTamelyGuppyDoming53',
+mysqldump -h 127.0.0.1 --user=a7ffd2db_stage --password --single-transaction --skip-triggers a7ffd2db_slcstage | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > slcactivewear_staging_db_27_May_2022.sql.gz
+
+
+
+
+
+
+mysql -h 127.0.0.1 -u a7ffd2db_stage -p a7ffd2db_slcstage -A
+
+mysqldump -h 127.0.0.1 -u a7ffd2db_stage -p a7ffd2db_slcstage mgr9_core_config_data > mgr9coreconfigdata_stg_May27-2022.sql
+
+scp riddlesjewelry_prod_2022_March_30.sql.gz ac856ab1_3@28e8399bc4.nxcli.net:/chroot/home/ac856ab1/dbbackups/
+
+
+
+select * from mrg9_core_config_data where path like "%web%";
+
+mysql -h localhost -u a913eea4_mage242 -p a913eea4_mage242 < coreconfigdata_mage242_May27-2022.sql
+
+zcat slcactivewear_prod_db_27-May-2022.sql.gz -f | sed -re 's/DEFINER=`[^`]+`@`[^`]+`//' | mysql -h localhost --user a913eea4_mage242 -p a913eea4_mage242 -A
+
+select * from mrg9_core_config_data where path like "%web%";
+
+
+select * from mgr9_core_config_data where path like 'web/%/%url%';
+
+
+mage242
+
+ult' => [
+                'host' => 'localhost',
+                'dbname' => 'a913eea4_mage242',
+                'username' => 'a913eea4_mage242',
+                'password' => 'SortedPosiesSniffsBriars76',
+				
+mysqldump -h localhost --user=a913eea4_mage242 --password --single-transaction --skip-triggers a913eea4_mage242 | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > slcactivewear_mage242_db_27_May_2022.sql.gz
+
+
+mysqldump -h localhost -u a913eea4_mage242 -p a913eea4_mage242 core_config_data > coreconfigdata_mage242_May27-2022.sql

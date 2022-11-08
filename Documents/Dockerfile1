@@ -1,0 +1,23 @@
+FROM ubuntu:20.04
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt update && apt install -y openssh-server openssh-client  nginx wget php php7.4 php-fpm php7.4-mysql php7.4-soap php7.4-bcmath php7.4-xml php7.4-mbstring php7.4-gd php7.4-common php7.4-cli php7.4-curl php7.4-intl php7.4-zip zip unzip -y &&  apt install -y mysql-server mysql-client &&\
+sed -ie "s/#PasswordAuthentication yes/PasswordAuthentication yes/g" /etc/ssh/sshd_config &&\
+apt remove --purge apache2 -y && apt autoremove -y &&\
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" HASH="$(wget -q -O - https://composer.github.io/installer.sig)" php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" &&\
+php composer-setup.php --install-dir=/usr/local/bin --filename=composer &&\
+composer -V && nginx -t && rm -rf /etc/nginx/sites-enabled/default && ln -s /etc/nginx/sites-{available,enabled}/default &&\
+service mysql start &&\
+mysql -uroot -proot -e "CREATE DATABASE varsha; CREATE USER 'varsha'@'localhost' IDENTIFIED BY 'varsha'; GRANT ALL PRIVILEGES ON *.* TO 'varsha'@'localhost' WITH GRANT OPTION; FLUSH PRIVILEGES; USE mysql; ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'varsha'; FLUSH PRIVILEGES;" &&\
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.9.0-amd64.deb &&\
+dpkg -i elasticsearch-7.9.0-amd64.deb &&\
+COPY auth.json /root/.config/composer/auth.json
+COPY php.ini /etc/php/7.4/fpm/php.ini
+COPY default.conf  /etc/nginx/sites-available/
+WORKDIR /var/www/html/magento
+RUN useradd -m -d /home/varsha varsha &&\
+echo "varsha:varsha" | chpasswd &&\
+echo "varsha ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers &&\
+composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.4.2 /var/www/html/magento &&\
+find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :www-data . && chmod u+x bin/magento && chmod -R 777 var generated && service mysql start && service nginx start && service elasticsearch start && service php7.4-fpm start && php bin/magento setup:install --base-url=http://varshap.bkp/ --db-host=localhost --db-name=varsha --db-user=varsha --db-password='varsha' --admin-firstname=Magento --admin-lastname=User --admin-email=varshap@kensium.com --admin-user=admin --admin-password=admin123 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 && php bin/magento setup:di:compile && php bin/magento setup:static-content:deploy -f && php bin/magento cache:clean && php bin/magento cache:flush
+CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 80 22 9200

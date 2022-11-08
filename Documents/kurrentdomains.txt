@@ -1,0 +1,147 @@
+mcprod.kurrent.com	151.101.1.124
+mcprod.kurrent.com	151.101.65.124
+mcprod.kurrent.com	151.101.129.124
+mcprod.kurrent.com	151.101.193.124
+
+
+
+_acme-challenge.mcprod.kurrent.com CNAME vaoxnp4fx4uvla5uiw6eq667kduzwtfoxwa2w37kkotncg5fuchq.validation.magento.cloud
+_acme-challenge.www.mcprod.kurrent.com CNAME efz3griczomz5cm6e4grhr3wt2cly2kariprivrqaenr5fxyzrza.validation.magento.cloud
+_acme-challenge.mcstaging.kurrent.com CNAME bzp2ktgebmqrlzjiwyv3j7em6hxzyszkzmfsmotbaefp526gyjla.validation.magento.cloud
+_acme-challenge.www.mcstaging.kurrent.com CNAME nsoxrmka65ksnippomd3n75wm4m6w3hbq4ejodxvj7crsw4sdj4q.validation.magento.cloud
+
+
+
+
+https://support.magento.com/hc/requests/502227 = ticket.
+
+
+
+https://support.magento.com/hc/en-us/requests/504255   == integration ticket
+Deployment log: var/log/cloud.log
+Last deployment error log: var/log/cloud.error.log
+
+Deploy log ->
+/var/log/deploy.log
+Post-deploy log ->
+/var/log/post_deploy.log
+
+staging:
+php bin/magento admin:user:create --admin-user="devops" --admin-password="devops@123" --admin-email="devops@kensium.com" --admin-firstname="devops" --admin-lastname="kensium"
+
+production
+php bin/magento admin:user:create --admin-user="devops" --admin-password="devops@123" --admin-email="devops@kensium.com" --admin-firstname="devops" --admin-lastname="kensium"
+
+
+"name" : "i-0d64be5dccf2ee369",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "CPdY9qvNRmeMlfWKUlIyyw",
+  "version" : {
+    "number" : "7.7.1",
+    "build_flavor" : "oss",
+    "build_type" : "deb",
+    "build_hash" : "c83a75c5dddb131d724987c2e4b9da9ab38b6c00",
+    "build_date" : "2021-12-24T15:13:40.669103Z",
+    "build_snapshot" : false,
+    "lucene_version" : "8.5.1",
+    "minimum_wire_compatibility_version" : "6.8.0",
+    "minimum_index_compatibility_version" : "6.0.0-beta1"
+  },
+  "tagline" : "You Know, for Search"
+
+
+mysql  Ver 15.1 Distrib 10.3.34-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2
+
+
+PHP 7.4.28 (cli) ( ZTS )
+Copyright (c) The PHP Group
+Zend Engine v3.4.0, Copyright (c) Zend Technologies
+    with Zend OPcache v7.4.28, Copyright (c), by Zend Technologies
+
+
+Composer version 1.10.5 2020-04-10 11:44:22
+redis-cli -v
+redis-cli 6.0.12 (git:b3392dcb-dirty)
+
+
+rabbit@host1: RabbitMQ 3.8.14 on Erlang 23.3.4
+rabbit@host2: RabbitMQ 3.8.14 on Erlang 23.3.4
+rabbit@host3: RabbitMQ 3.8.14 on Erlang 23.3.4
+
+
+====================================================================================================
+=======================================================================================================
+
+staging:
+
+ray (
+        'host' => '127.0.0.1',
+        'username' => 'ya5hulqkobj74_stg',
+        'dbname' => 'ya5hulqkobj74_stg',
+        'password' => 'WBOujLF0e4JEZ3c',
+
+array (
+    'connection' => 
+    array (
+      'default' => 
+      array (
+        'host' => '127.0.0.1',
+        'username' => 'ya5hulqkobj74_stg',
+        'dbname' => 'ya5hulqkobj74_stg',
+        'password' => 'WBOujLF0e4JEZ3c',
+      ),
+
+		
+mysqldump -h 127.0.0.1 -u ya5hulqkobj74_stg -p ya5hulqkobj74_stg --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /tmp/ya5hulqkobj74_stg_$(date +%d-%b-%Y).sql.gz
+
+mysqldump -h 127.0.0.1 -u ya5hulqkobj74_stg -p ya5hulqkobj74_stg --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /tmp/ya5hulqkobj74_stg_$(date +%d-%b-%Y).sql.gz
+
+all backups stored in /tmp/ 
+in staging 
+cd pub
+
+tar -cvzf /tmp/stg_media_29mar22.tar.gz media      === only media
+
+
+
+upgrade version 8.9.20 to 9.3.7 and update modules also
+
+============================================================================================================
+==============================================================================================================
+
+
+  "rabbitmq" : [
+      {
+         "password" : "fx1cHZpBb4VhZT6C",
+         "port" : "5672",
+         "username" : "ya5hulqkobj74_stg",
+         "scheme" : "amqp",
+         "host" : "localhost",
+         "vhost" : "ya5hulqkobj74_stg"
+      }
+	  
+	============================================================
+===========================================================================	
+	  production:
+	  
+	  
+	
+	  db' => 
+  array (
+    'connection' => 
+    array (
+      'default' => 
+      array (
+        'host' => '127.0.0.1',
+        'username' => 'ya5hulqkobj74',
+        'dbname' => 'ya5hulqkobj74',
+        'password' => 'dr5eyUJweW5hSI2',
+        'model' => 'mysql4',
+        'engine' => 'innodb',
+        'initStatements' => 'SET NAMES utf8;',
+        'active' => '1',
+        'driver_options' => 
+        array (
+          1014 => false,
+		  
+mysqldump -h 127.0.0.1 -u ya5hulqkobj74 -p ya5hulqkobj74 --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /tmp/ya5hulqkobj74_2022_March_29.sql.gz

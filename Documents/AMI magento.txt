@@ -1,0 +1,87 @@
+American Meadows (Magento) - Production deployment initiated.
+
+ay (
+        'host' => '127.0.0.1',
+        'username' => 'dclwhyijmqovy',
+        'dbname' => 'dclwhyijmqovy',
+        'password' => 'UDdMyzAjjftUSfn',
+
+
+mysqldump -h 127.0.0.1 -u dclwhyijmqovy -p dclwhyijmqovy --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /tmp/dclwhyijmqovy_2022_Sep_19.sql.gz
+
+php vendor/bin/ece-tools cron:kill
+
+php vendor/bin/ece-tools cron:disable
+
+mysqldump -h 127.0.0.1 -u dclwhyijmqovy_stg2 -pTH1nTriekFbtZNm dclwhyijmqovy_stg2 --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/dclwhyijmqovy_stg2/var/backup/dclwhyijmqovy_stg2_$(date +%d-%b-%Y).sql.gz
+
+UDdMyzAjjftUSfn
+
+rray (
+    'connection' => 
+    array (
+      'default' => 
+      array (
+        'host' => '127.0.0.1',
+        'username' => 'dclwhyijmqovy_stg2',
+        'dbname' => 'dclwhyijmqovy_stg2',
+        'password' => 'TH1nTriekFbtZNm',
+        'model' => 'mysql4',
+
+
+mysqldump -h 127.0.0.1 -u dclwhyijmqovy_stg2 -p dclwhyijmqovy_stg2 --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /tmp/dclwhyijmqovy_stg2_2022_Sep_19.sql.gz
+
+
+
+mysql -h 127.0.0.1 -u dclwhyijmqovy -p dclwhyijmqovy -A   === 807
+
+mysql -h 127.0.0.1 -u dclwhyijmqovy_stg2 -p dclwhyijmqovy_stg2 -A
+
+mysqldump -h 127.0.0.1 -u dclwhyijmqovy_stg2 -p dclwhyijmqovy_stg2 core_config_data > coreconfigdata_stg_Sep19-2022.sql
+
+
+scp dclwhyijmqovy_2022_Sep_19.sql.gz ssh 3.ent-dclwhyijmqovy-staging2-5zxmgzy@ssh.us-3.magento.cloud:/tmp/
+
+
+mysql -h 127.0.0.1 -u dclwhyijmqovy_stg2 -p dclwhyijmqovy_stg2 < coreconfigdata_stg_Sep19-2022.sql
+
+zcat dclwhyijmqovy_2022_Sep_19.sql.gz -f  | sed -re 's/DEFINER=`[^`]+`@`[^`]+`//' | mysql -h 127.0.0.1 --user dclwhyijmqovy_stg2 -p dclwhyijmqovy_stg2 -A
+
+select * from core_config_data where path like "%web%";
+
+select * from core_config_data where path like 'web/%/%url%';
+
+
+
+
+MariaDB [dclwhyijmqovy_stg2]> select * from core_config_data where path like 'web/%/%url%';
++-----------+----------+----------+----------------------------------+---------------------------------------------------+---------------------+
+| config_id | scope    | scope_id | path                             | value                                             | updated_at          |
++-----------+----------+----------+----------------------------------+---------------------------------------------------+---------------------+
+|         2 | default  |        0 | web/unsecure/base_url            | https://mcstaging2.americanmeadows.com/           | 2022-03-09 13:01:16 |
+|         3 | default  |        0 | web/secure/base_url              | https://mcstaging2.americanmeadows.com/           | 2022-03-09 12:52:48 |
+|        22 | default  |        0 | web/unsecure/base_static_url     | https://mcstaging2.americanmeadows.com/static/    | 2022-03-09 13:01:36 |
+|        23 | default  |        0 | web/unsecure/base_media_url      | https://mcstaging2.americanmeadows.com/media/     | 2022-03-09 13:01:52 |
+|        24 | default  |        0 | web/secure/base_static_url       | https://mcstaging2.americanmeadows.com/static/    | 2022-03-09 12:53:01 |
+|        25 | default  |        0 | web/secure/base_media_url        | https://mcstaging2.americanmeadows.com/media/     | 2022-03-09 12:53:10 |
+|      2306 | websites |        3 | web/unsecure/base_url            | https://mcstaging2.highcountrygardens.com/        | 2022-03-22 05:57:11 |
+|      2307 | websites |        3 | web/unsecure/base_link_url       | https://mcstaging2.highcountrygardens.com/        | 2022-03-22 05:57:11 |
+|      2308 | websites |        3 | web/unsecure/base_static_url     | https://mcstaging2.highcountrygardens.com/static/ | 2022-03-22 05:57:11 |
+|      2309 | websites |        3 | web/unsecure/base_media_url      | https://mcstaging2.highcountrygardens.com/media/  | 2022-03-22 05:57:11 |
+|      2529 | websites |        3 | web/secure/base_url              | https://mcstaging2.highcountrygardens.com/        | 2022-03-22 05:57:12 |
+|      2532 | websites |        3 | web/secure/base_link_url         | https://mcstaging2.highcountrygardens.com/        | 2022-03-22 05:57:12 |
+|      2535 | websites |        3 | web/secure/base_static_url       | https://mcstaging2.highcountrygardens.com/static/ | 2022-03-22 05:57:12 |
+|      2538 | websites |        3 | web/secure/base_media_url        | https://mcstaging2.highcountrygardens.com/media/  | 2022-03-22 05:57:12 |
+|      6600 | websites |        9 | web/unsecure/base_url            | https://mcstaging2.landrethseed.com/              | 2022-04-05 08:12:37 |
+|      6603 | websites |        9 | web/unsecure/base_link_url       | https://mcstaging2.landrethseed.com/              | 2022-04-05 08:12:37 |
+|      6606 | websites |        9 | web/unsecure/base_static_url     | https://mcstaging2.landrethseed.com/static/       | 2022-04-05 08:12:37 |
+|      6609 | websites |        9 | web/unsecure/base_media_url      | https://mcstaging2.landrethseed.com/media/        | 2022-04-05 08:12:37 |
+|      6612 | websites |        9 | web/secure/base_url              | https://mcstaging2.landrethseed.com/              | 2022-04-05 08:12:37 |
+|      6615 | websites |        9 | web/secure/base_link_url         | https://mcstaging2.landrethseed.com/              | 2022-04-05 08:12:37 |
+|      6618 | websites |        9 | web/secure/base_static_url       | https://mcstaging2.landrethseed.com/static/       | 2022-04-05 08:12:37 |
+|      6621 | websites |        9 | web/secure/base_media_url        | https://mcstaging2.landrethseed.com/media/        | 2022-04-05 08:12:37 |
+|  54084186 | default  |        0 | web/unsecure/base_link_url       | https://mcstaging2.americanmeadows.com/           | 2022-03-09 13:04:35 |
+|  54084189 | default  |        0 | web/secure/base_link_url         | https://mcstaging2.americanmeadows.com/           | 2022-03-09 13:04:35 |
+| 216533224 | default  |        0 | web/url/catalog_media_url_format | hash                                              | 2022-03-09 13:06:38 |
++-----------+----------+----------+----------------------------------+---------------------------------------------------+---------------------+
+25 rows in set (0.004 sec)

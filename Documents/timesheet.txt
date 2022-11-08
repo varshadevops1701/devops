@@ -1,0 +1,26 @@
+1.access diable =0.5
+2.nexcess ticket for composer version =0.5
+3.magentp tiket for boxbeauty =0.5
+4.call for jenkins and docker images 0.5
+5.uploaded staging images into production for box beauty =1
+6.created repo and shared access =1
+7.email plugin =
+
+
+
+
+Tuesday
+
+BB maintenance =1
+
+git clone issue 443 port and 22 =0.5
+
+Created repo in bitbucket = 0.5
+
+ssl certificate for 111 server = 0.5
+
+Package publishing ==1
+
+Upload two file in boxbeauty as keshab said = 1
+
+

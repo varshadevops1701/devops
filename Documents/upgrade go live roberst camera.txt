@@ -1,0 +1,69 @@
+https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html#custom-maintenance-page-for-nginx
+php bin/magento maintenance:enable --ip=
+
+
+crontab -l   to list the ruunning crontabs
+crontab -e  to edit the crons
+mysql -v 
+php -v
+
+PRODUCTION              UPGRADE STAGING
+mysql 10.3.28                  mysql 10.3.28
+php 7.2.34                        php 7.4.28
+elasticsearch  7.6                   elastcisearch  7.10
+
+crontab -l > cron_content
+ crontab -r
+ <this is where you do your stuff>
+ crontab cron_content
+
+
+forticlient  === office VPN
+LDAP credentials
+
+ssh ami@50
+mkdir 25_March_2022
+cd 25_March_2022
+
+git clone
+
+ssh -i amiproductionserver
+php bin/magento maintenance:status
+php bin/magento maintenance:enable
+
+php bin/magento c:c
+php bin/magento c:f
+
+cat app/etc/env.php
+
+usernaem
+databasename
+password
+
+cd /var/backups or cd backup or cd dbabckups
+
+pwd
+
+mysqldump -h hostname -u username -p databasename --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /tmp/szdbokvbfnk7k_2022_Mar_25.sql.gz
+
+mysqldump -h 127.0.0.1 -u szdbokvbfnk7k -p szdbokvbfnk7k --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /tmp/szdbokvbfnk7k_2022_Mar_10.sql.gz
+
+ls 
+pwd
+
+logout from production server
+(ctrl+d)
+
+up arrow we will get 
+scp -1 amiproductionserver:path/zdbokvbfnk7k_2022_Mar_10.sql.gz .
+
+ctrl+d
+
+up arrow
+scpami@50:path/filesname 
+
+production 
+
+
+
+

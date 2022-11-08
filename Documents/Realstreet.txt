@@ -1,0 +1,106 @@
+mysqldump -h 127.0.0.1 -u qryfkwmnmsdtq -p qryfkwmnmsdtq --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/qryfkwmnmsdtq/var/backups/qryfkwmnmsdtq_09Sep2022.sql.gz
+
+
+host' => '127.0.0.1',
+        'username' => 'qryfkwmnmsdtq',
+        'dbname' => 'qryfkwmnmsdtq',
+        'password' => 'vBk80dPw5FcSbxT',
+
+
+Real street - Magento Production Deployment initiating.
+
+mysql -h 127.0.0.1 -u qryfkwmnmsdtq -p qryfkwmnmsdtq -A
+
+
+array (
+      'default' => 
+      array (
+        'host' => '127.0.0.1',
+        'username' => 'qryfkwmnmsdtq_stg2',
+        'dbname' => 'qryfkwmnmsdtq_stg2',
+        'password' => 'szvJFF5PAOe3ZI6',
+mysqldump -h 127.0.0.1 -u qryfkwmnmsdtq_stg2 -p qryfkwmnmsdtq_stg2 --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/qryfkwmnmsdtq_stg2/var/backups/RS_Staging2_09Sep2022.sql.gz
+
+
+
+mysql -h 127.0.0.1 -u qryfkwmnmsdtq_stg2 -p qryfkwmnmsdtq_stg2 -A
+
+mysqldump -h 127.0.0.1 -u qryfkwmnmsdtq_stg2 -p qryfkwmnmsdtq_stg2 core_config_data > coreconfigdata_stg_Sep09-2022.sql
+
+
+scp qryfkwmnmsdtq_09-Sep-2022.sql.gz 3.ent-qryfkwmnmsdtq-staging2-5zxmgzy@ssh.us.magentosite.cloud:/app/qryfkwmnmsdtq_stg2/var/backups/
+
+scp qryfkwmnmsdtq_09-Sep-2022.sql.gz 3.ent-qryfkwmnmsdtq-staging2-5zxmgzy@ssh.us.magentosite.cloud:/app/qryfkwmnmsdtq_stg2/var/backups/
+
+mysql -h 127.0.0.1 -u qryfkwmnmsdtq_stg2 -p qryfkwmnmsdtq_stg2 < coreconfigdata_stg_Sep09-2022.sql
+
+zcat cnzt7yizxjcda_10June2022.sql.gz -f  | sed -re 's/DEFINER=`[^`]+`@`[^`]+`//' | mysql -h 127.0.0.1 --user qryfkwmnmsdtq_stg2 -p qryfkwmnmsdtq_stg2 -A
+
+select * from core_config_data where path like "%web%";
+
+select * from core_config_data where path like 'web/%/%url%';
+
+
+
+MariaDB [qryfkwmnmsdtq_stg2]> select * from core_config_data where path like 'web/%/%url%';
++-----------+---------+----------+------------------------------+-----------------------------------------------+---------------------+
+| config_id | scope   | scope_id | path                         | value                                         | updated_at          |
++-----------+---------+----------+------------------------------+-----------------------------------------------+---------------------+
+|        52 | default |        0 | web/unsecure/base_url        | http://mcstaging2.realstreetperformance.com/  | 2021-02-03 14:37:35 |
+|        53 | default |        0 | web/secure/base_url          | https://mcstaging2.realstreetperformance.com/ | 2020-11-04 10:31:04 |
+|      1592 | default |        0 | web/unsecure/base_static_url | NULL                                          | 2020-08-18 11:37:32 |
+|      1595 | default |        0 | web/unsecure/base_media_url  | NULL                                          | 2021-01-20 05:47:43 |
+|      1598 | default |        0 | web/secure/base_static_url   | NULL                                          | 2020-08-18 11:37:32 |
+|      1601 | default |        0 | web/secure/base_media_url    | NULL                                          | 2021-01-20 05:47:43 |
++-----------+---------+----------+------------------------------+-----------------------------------------------+---------------------+
+6 rows in set (0.00 sec)
+
+MariaDB [qryfkwmnmsdtq_stg2]> select * from core_config_data where path like "%web%";
++-----------+---------+----------+-------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+---------------------+
+| config_id | scope   | scope_id | path                                                                                      | value                                                                    | updated_at          |
++-----------+---------+----------+-------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+---------------------+
+|        51 | default |        0 | web/seo/use_rewrites                                                                      | 1                                                                        | 2020-08-18 11:37:32 |
+|        52 | default |        0 | web/unsecure/base_url                                                                     | http://mcstaging2.realstreetperformance.com/                             | 2021-02-03 14:37:35 |
+|        53 | default |        0 | web/secure/base_url                                                                       | https://mcstaging2.realstreetperformance.com/                            | 2020-11-04 10:31:04 |
+|        55 | default |        0 | web/secure/use_in_frontend                                                                | 1                                                                        | 2021-01-20 05:45:28 |
+|        56 | default |        0 | web/secure/use_in_adminhtml                                                               | 1                                                                        | 2020-08-18 11:37:32 |
+|      1592 | default |        0 | web/unsecure/base_static_url                                                              | NULL                                                                     | 2020-08-18 11:37:32 |
+|      1595 | default |        0 | web/unsecure/base_media_url                                                               | NULL                                                                     | 2021-01-20 05:47:43 |
+|      1598 | default |        0 | web/secure/base_static_url                                                                | NULL                                                                     | 2020-08-18 11:37:32 |
+|      1601 | default |        0 | web/secure/base_media_url                                                                 | NULL                                                                     | 2021-01-20 05:47:43 |
+|      1604 | default |        0 | web/cookie/cookie_path                                                                    | NULL                                                                     | 2020-08-18 11:37:32 |
+|      1607 | default |        0 | web/cookie/cookie_domain                                                                  | NULL                                                                     | 2020-08-18 11:37:32 |
+|      1610 | default |        0 | web/cookie/cookie_httponly                                                                | 1                                                                        | 2020-08-18 11:37:32 |
+|      1688 | default |        0 | system/full_page_cache/fastly/fastly_web_hooks/enable_webhooks                            | 1                                                                        | 2020-08-18 11:37:32 |
+|      1691 | default |        0 | system/full_page_cache/fastly/fastly_web_hooks/incoming_webhook_url                       | NULL                                                                     | 2020-08-18 11:37:32 |
+|      1694 | default |        0 | system/full_page_cache/fastly/fastly_web_hooks/publish_key_url_purge_events               | 1                                                                        | 2020-08-18 11:37:32 |
+|      1697 | default |        0 | system/full_page_cache/fastly/fastly_web_hooks/publish_purge_all_items_events             | 1                                                                        | 2020-08-18 11:37:32 |
+|      1700 | default |        0 | system/full_page_cache/fastly/fastly_web_hooks/publish_purge_all_trace                    | 0                                                                        | 2020-08-18 11:37:32 |
+|      1703 | default |        0 | system/full_page_cache/fastly/fastly_web_hooks/publish_config_change_events               | 1                                                                        | 2020-08-18 11:37:32 |
+|      1706 | default |        0 | system/full_page_cache/fastly/fastly_web_hooks/webhook_message_prefix                     | NULL                                                                     | 2020-08-18 11:37:32 |
+|      2478 | default |        0 | system/full_page_cache/fastly/fastly_web_application_firewall/owasp_allowed_methods       | NULL                                                                     | 2020-08-18 11:37:32 |
+|      2481 | default |        0 | system/full_page_cache/fastly/fastly_web_application_firewall/owasp_restricted_extensions | NULL                                                                     | 2020-08-18 11:37:32 |
+|      2940 | default |        0 | mageworx_seo/base/hreflangs/x_default_website                                             | NULL                                                                     | 2020-08-18 11:37:32 |
+|      3069 | default |        0 | mageworx_seo/markup/website/rs_enabled                                                    | 1                                                                        | 2020-08-18 11:37:32 |
+|      3072 | default |        0 | mageworx_seo/markup/website/og_enabled                                                    | 1                                                                        | 2020-08-18 11:37:32 |
+|      3075 | default |        0 | mageworx_seo/markup/website/description                                                   | Real Street Performance is the parts supplier that racers and retailers. | 2020-08-18 11:37:32 |
+|      3078 | default |        0 | mageworx_seo/markup/website/tw_enabled                                                    | 1                                                                        | 2020-08-18 11:37:32 |
+|      3081 | default |        0 | mageworx_seo/markup/website/fb_app_id                                                     | NULL                                                                     | 2020-08-18 11:37:32 |
+|      3084 | default |        0 | mageworx_seo/markup/website/name                                                          | Real Street Performance                                                  | 2020-08-18 11:37:32 |
+|      3087 | default |        0 | mageworx_seo/markup/website/og_image                                                      | default/realstreetperformance-fb-logo.jpg                                | 2020-08-18 11:37:32 |
+|      3285 | default |        0 | web/session/use_frontend_sid                                                              | 0                                                                        | 2020-08-18 11:37:32 |
+|      3477 | default |        0 | system/full_page_cache/fastly/fastly_web_application_firewall/waf_allow_by_acl            | NULL                                                                     | 2020-08-18 11:37:32 |
+|      3489 | default |        0 | system/full_page_cache/fastly/fastly_web_hooks/publish_purge_events                       | 0                                                                        | 2020-08-18 11:37:32 |
+|      3492 | default |        0 | system/full_page_cache/fastly/fastly_web_hooks/publish_purge_trace                        | 0                                                                        | 2020-08-18 11:37:32 |
+|      3495 | default |        0 | system/full_page_cache/fastly/fastly_web_hooks/publish_purge_by_key_trace                 | 0                                                                        | 2020-08-18 11:37:32 |
+|      3663 | default |        0 | web/default_layouts/default_product_layout                                                | product-full-width                                                       | 2020-10-20 13:23:00 |
+|      3666 | default |        0 | web/default_layouts/default_category_layout                                               | category-full-width                                                      | 2020-10-20 13:23:00 |
+|      3669 | default |        0 | web/default_layouts/default_cms_layout                                                    | cms-full-width                                                           | 2020-10-20 13:23:00 |
+|      4236 | default |        0 | web/secure/enable_hsts                                                                    | 1                                                                        | 2021-01-20 06:05:03 |
+|      4239 | default |        0 | web/secure/enable_upgrade_insecure                                                        | 1                                                                        | 2021-01-20 06:05:03 |
+|      4955 | default |        0 | web/url/use_store                                                                         | 1                                                                        | 2022-02-11 12:22:50 |
+|      5255 | default |        0 | general_setting/general/webp_jpg                                                          | 0                                                                        | 2022-08-02 10:28:19 |
+|      5258 | default |        0 | general_setting/general/webp_png                                                          | 0                                                                        | 2022-08-02 10:28:19 |
+|      5261 | default |        0 | general_setting/general/webp_quality                                                      | 80                                                                       | 2022-08-02 10:34:43 |
++-----------+---------+----------+-------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+---------------------+
+43 rows in set (0.00 sec)

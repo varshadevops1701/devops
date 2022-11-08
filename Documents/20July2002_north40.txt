@@ -1,0 +1,69 @@
+[northfou@gpc002-lb1 public_html]$ git pull bitbucket production --ff
+Password for 'https://kensiumdevops@bitbucket.org': 
+From https://bitbucket.org/kensium-solutions/north40-magento
+ * branch              production -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ app/code/Amasty/Xnotif/Model/Observer.php                                                      |   1 +
+ app/code/Kensium/PriceRange/view/base/templates/product/price/final_price.phtml                |   4 +-
+ app/code/Text/Extension/README.md                                                              |  39 ++++++
+ app/code/Text/Extension/etc/adminhtml/di.xml                                                   |  29 ++++
+ app/code/Text/Extension/etc/module.xml                                                         |   8 ++
+ app/code/Text/Extension/registration.php                                                       |   9 ++
+ app/code/Text/Extension/text-extension.gif                                                     | Bin 0 -> 625800 bytes
+ app/code/Text/Extension/view/adminhtml/web/css/source/_module.less                             |   1 +
+ app/code/Text/Extension/view/adminhtml/web/css/source/content-type/text/_default.less          | 127 +++++++++++++++++
+ app/code/Text/Extension/view/adminhtml/web/css/source/content-type/text/_import.less           |   1 +
+ app/code/Text/Extension/view/adminhtml/web/fonts/HelveticaNeue.woff                            | Bin 0 -> 215256 bytes
+ app/code/Text/Extension/view/adminhtml/web/fonts/HelveticaNeue.woff2                           | Bin 0 -> 131724 bytes
+ app/code/Text/Extension/view/adminhtml/web/fonts/OFL.txt                                       |  93 +++++++++++++
+ app/code/Text/Extension/view/adminhtml/web/fonts/Readme.md                                     |   6 +
+ app/code/Text/Extension/view/adminhtml/web/fonts/helvetica_neu_bold-webfont.woff               | Bin 0 -> 23552 bytes
+ app/code/Text/Extension/view/adminhtml/web/fonts/helvetica_neu_bold-webfont.woff2              | Bin 0 -> 17596 bytes
+ app/code/Text/Extension/view/adminhtml/web/fonts/helveticaneue_medium-webfont.woff             | Bin 0 -> 23392 bytes
+ app/code/Text/Extension/view/adminhtml/web/fonts/helveticaneue_medium-webfont.woff2            | Bin 0 -> 17544 bytes
+ app/code/Text/Extension/view/adminhtml/web/fonts/helveticaneue_thin-webfont.woff               | Bin 0 -> 22808 bytes
+ app/code/Text/Extension/view/adminhtml/web/fonts/helveticaneue_thin-webfont.woff2              | Bin 0 -> 17060 bytes
+ app/code/Text/Extension/view/adminhtml/web/fonts/poppins-bold-webfont.woff                     | Bin 0 -> 22704 bytes
+ app/code/Text/Extension/view/adminhtml/web/fonts/poppins-bold-webfont.woff2                    | Bin 0 -> 16776 bytes
+ app/code/Text/Extension/view/adminhtml/web/fonts/poppins-regular-webfont.woff                  | Bin 0 -> 22624 bytes
+ app/code/Text/Extension/view/adminhtml/web/fonts/poppins-regular-webfont.woff2                 | Bin 0 -> 17184 bytes
+ app/code/WeltPixel/InstagramWidget/Plugin/Utility.php                                          |  36 +++++
+ app/code/WeltPixel/InstagramWidget/composer.json                                               |   2 +-
+ app/code/WeltPixel/InstagramWidget/etc/adminhtml/di.xml                                        |   6 +
+ app/code/WeltPixel/InstagramWidget/view/frontend/templates/widget/basic/instagram_widget.phtml |   8 +-
+ app/code/WeltPixel/InstagramWidget/view/frontend/templates/widget/instagram_widget.phtml       |  10 +-
+ app/code/WeltPixel/InstagramWidget/view/frontend/templates/widget/js/instagram_widget.phtml    |  10 +-
+ .../frontend/Flyproject/default/WeltPixel_ProductPage/templates/product/view/addtocart.phtml   |   2 +-
+ app/design/frontend/North40/default/Magefan_Blog/templates/widget/recent.phtml                 |  20 +--
+ app/design/frontend/North40/default/Magento_Checkout/web/css/source/module/_checkoutpage.less  |  72 +++++++++-
+ .../frontend/North40/default/Magento_Checkout/web/css/source/module/_checkoutsuccess.less      | 356 +++++++++++++++++++++++------------------------
+ app/design/frontend/North40/default/Magento_Cms/web/css/source/modules/_cms_blog.less          |  10 +-
+ app/design/frontend/North40/default/web/css/source/module/_font.less                           |  45 +++++-
+ app/design/frontend/Swate/default/Magento_Search/templates/form.mini.phtml                     |   2 +-
+ composer.json                                                                                  |   2 +-
+ composer.lock                                                                                  |  12 +-
+ 39 files changed, 687 insertions(+), 224 deletions(-)
+ create mode 100644 app/code/Text/Extension/README.md
+ create mode 100644 app/code/Text/Extension/etc/adminhtml/di.xml
+ create mode 100644 app/code/Text/Extension/etc/module.xml
+ create mode 100644 app/code/Text/Extension/registration.php
+ create mode 100644 app/code/Text/Extension/text-extension.gif
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/css/source/_module.less
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/css/source/content-type/text/_default.less
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/css/source/content-type/text/_import.less
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/HelveticaNeue.woff
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/HelveticaNeue.woff2
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/OFL.txt
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/Readme.md
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/helvetica_neu_bold-webfont.woff
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/helvetica_neu_bold-webfont.woff2
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/helveticaneue_medium-webfont.woff
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/helveticaneue_medium-webfont.woff2
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/helveticaneue_thin-webfont.woff
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/helveticaneue_thin-webfont.woff2
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/poppins-bold-webfont.woff
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/poppins-bold-webfont.woff2
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/poppins-regular-webfont.woff
+ create mode 100644 app/code/Text/Extension/view/adminhtml/web/fonts/poppins-regular-webfont.woff2
+ create mode 100644 app/code/WeltPixel/InstagramWidget/Plugin/Utility.php
+ create mode 100644 app/code/WeltPixel/InstagramWidget/etc/adminhtml/di.xml

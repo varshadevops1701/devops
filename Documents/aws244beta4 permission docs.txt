@@ -1,0 +1,58 @@
+sudo chmod -R 775 var generated
+sudo chmod -R 755 pub
+mv pub/static pub/static.bkp
+php bin/magento setup:static-content:deploy -f
+sudo find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
+sudo find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
+sudo chown -R ubuntu:www-data .
+sudo chmod u+x bin/magento
+
+cp -rp /var/www/html/magento/pub/static.bkp/{.,}* /var/www/html/magento/pub/static/
+rm -rf health_check.php get.php  errors .user.ini media static
+php bin/magento setup:static-content:deploy -f
+
+sudo find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
+sudo find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
+sudo chown -R ubuntu:www-data .
+sudo chmod u+x bin/magento
+
+
+
+
+
+ubuntu@aws:/var/www/html/magento/pub/static$ll
+total 16K
+drwxr-xr-x 7 ubuntu   www-data 4.0K Mar 18 11:12 ..
+-rw-rw-r-- 1 www-data www-data   10 Mar 18 11:24 deployed_version.txt
+drwxrwsr-x 3 www-data www-data 4.0K Mar 18 11:24 frontend
+drwxrwsr-x 3 ubuntu   www-data 4.0K Mar 18 11:24 .
+
+
+ubuntu@aws:/var/www/html/magento/pub/static.bkp$ ll
+total 20K
+-rwxr-xr-x 1 ubuntu www-data 4.3K Feb 16 11:46 .htaccess
+drwxr-sr-x 3 ubuntu www-data 4.0K Mar 18 10:43 frontend
+drwxr-xr-x 7 ubuntu www-data 4.0K Mar 18 11:12 ..
+drwxr-sr-x 3 ubuntu www-data 4.0K Mar 18 11:36 .
+
+
+
+sh -i M-244-beta4_AMI-1.pem ubuntu@34.205.88.248  === new
+ after download the key give permissions 
+ 
+ chmod 400 keyname
+
+ssh -i M-244-beta4.pem ubuntu@52.206.200.115  ===old
+sudo webscale-cli deploy permissions
+
+
+if you are facing elasticserach issue
+
+First check the status
+
+sudo systemctl status elasticserach
+
+sudo systemctl start elasticserach
+
+sudo systemctl enabe elsaticsearch
+

@@ -1,0 +1,117 @@
+ansible = configuration and management tool = easy to setup,nodes cost ,easily scalable
+puppet 
+chef
+salt 
+
+ubuntu server:
+apt update
+apt  install anible
+ansible --version
+python3 --version
+ssh-copy-id root@Ip/hostname
+/etc/ssh/sshd_config = password authentication yes and permitrootlogin yes
+ssh root@client1
+/etc/hosts
+127.1.1.1  controller
+127.1.2.1  client1
+
+hosts
+[all]
+controller
+client1
+
+[prod]
+client2
+client3
+
+:
+:!
+:&
+
+modules
+1.ping
+2.file
+2.user
+4.apt
+5.yum
+6.systemctl
+7.service
+8.setup
+9.mount
+10.umount
+
+
+
+
+
+Adhoc commands / playbooks
+
+1.  ansible hostgroup module arguments
+
+ ansible -i hosts prod  -m apt -a "name=nginx state=latest"
+ ansible -i hosts prod -m user -a "name=varshaa path=/  passwd"
+ 
+ 
+ playbooks
+- - - 
+ - name: name of the playbook
+   hosts: localhost
+   become_root: yes
+   tasks:
+    - name: name of the task
+	  user:
+	    name: varsha
+        state: present
+	- name: name of the task
+	  file:
+	    name: testfile
+		state: directory
+
+
+
+mysqldump -h 127.0.0.1 -u  szdbokvbfnk7k -p szdbokvbfnk7k --single-transaction --skip-triggers | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /tmp/szdbokvbfnk7k_2022_Mar_10.sql.gz
+production 
+'host' => '127.0.0.1',
+        'username' => 'szdbokvbfnk7k',
+        'dbname' => 'szdbokvbfnk7k',
+        'password' => 'OYu10iuTpjq10E5',
+		
+		
+		
+		staging
+		host' => '127.0.0.1',
+        'username' => 'szdbokvbfnk7k_stg',
+        'dbname' => 'szdbokvbfnk7k_stg',
+        'password' => 'zgEadkwGe2vkR8Y',
+		
+		
+		szdbokvbfnk7k_2022_Mar_10.sql.gz   szdbokvbfnk7k_stg_2022_Mar_10.sql.gz
+
+mysql -h 127.0.0.1 -u szdbokvbfnk7k_stg -p szdbokvbfnk7k_stg -A
+
+
+mysqldump -h 127.0.0.1 -u szdbokvbfnk7k_stg -p szdbokvbfnk7k_stg core_config_data > coreconfigdata_stg_march10-2022.sql       ====tables backup in staging
+
+mysql -h 127.0.0.1 -u szdbokvbfnk7k_stg -p szdbokvbfnk7k_stg < danforth_stg_local_core_config_data.sql.gz  ==import corefig data
+
+stgaing===      zcat szdbokvbfnk7k_stg_2022_Mar_10.sql.gz  | sed -re 's/DEFINER=`[^`]+`@`[^`]+`//' | mysql -h 127.0.0.1 --user danforth_stg_local -p danforth_stg_local
+
+select * from core_config_data where path like 'web/%/%url%';
+
+
+update core_config_data set value ="localhost" where config_id = 1 ;
+
+mysql -u danforth_stg_local -p danforth_stg_local 
+password:   kspl@1234
+
+
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+
+FLUSH PRIVILEGES;
+
+
+
+mysqldump -h 127.0.0.1 --user=danforth_stg_local --password --single-transaction --skip-triggers danforth_stg_local core_config_data | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > danforth_stg_local_core_config_data.sql.gz
+

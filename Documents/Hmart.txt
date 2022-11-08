@@ -1,0 +1,41 @@
+mysqldump -h localhost --user=abc64d8c_riddlesstg --password  --single-transaction --skip-triggers abc64d8c_riddlesstg | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > abc64d8c_riddles_staging_db-30_March_2022.sql.gz
+
+
+mysql -h localhost -u abc64d8c_riddlesstg -p abc64d8c_riddlesstg -A
+
+mysqldump -h localhost -u abc64d8c_riddlesstg -p abc64d8c_riddlesstg core_config_data > coreconfigdata_stg_march30-2022.sql
+
+scp riddlesjewelry_prod_2022_March_30.sql.gz ac856ab1_3@28e8399bc4.nxcli.net:/chroot/home/ac856ab1/dbbackups/
+
+
+
+select * from core_config_data where path like "%web%";
+
+mysql -h localhost -u abc64d8c_riddlesstg -p abc64d8c_riddlesstg < coreconfigdata_stg_march30-2022.sql
+
+zcat -f riddlesjewelry_prod_2022_March_30.sql.gz | sed -re 's/DEFINER=`[^`]+`@`[^`]+`//' | mysql -h localhost --user abc64d8c_riddlesstg -p abc64d8c_riddlesstg
+
+ssh 3.ent-cnzt7yizxjcda-staging-5em2ouy@ssh.us-3.magento.cloud
+ssh 1.ent-cnzt7yizxjcda-staging-5em2ouy@ssh.us-3.magento.cloud
+
+
+staging:
+
+'host' => '127.0.0.1',
+        'username' => 'cnzt7yizxjcda_stg',
+        'dbname' => 'cnzt7yizxjcda_stg',
+        'password' => 'JlVUMRHNxyoEJNc',
+		
+mysqldump -h 127.0.0.1 --user=cnzt7yizxjcda_stg --password  --single-transaction --skip-triggers cnzt7yizxjcda_stg | gzip | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' > /app/cnzt7yizxjcda_stg/var/backup/hmart_staging_10_June_2022.sql.gz
+
+mysql -h 127.0.0.1 -u cnzt7yizxjcda_stg -p cnzt7yizxjcda_stg -A
+
+mysqldump -h 127.0.0.1 -u cnzt7yizxjcda_stg -p cnzt7yizxjcda_stg core_config_data > coreconfigdata_stg_June10-2022.sql
+
+
+scp cnzt7yizxjcda_10June2022.sql.gz 3.ent-cnzt7yizxjcda-staging-5em2ouy@ssh.us-3.magento.cloud://app/cnzt7yizxjcda_stg/var/backups/
+
+
+mysql -h 127.0.0.1 -u cnzt7yizxjcda_stg -p cnzt7yizxjcda_stg < coreconfigdata_stg_June10-2022.sql
+
+zcat cnzt7yizxjcda_10June2022.sql.gz -f  | sed -re 's/DEFINER=`[^`]+`@`[^`]+`//' | mysql -h 127.0.0.1 --user cnzt7yizxjcda_stg -p cnzt7yizxjcda_stg
